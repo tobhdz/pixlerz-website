@@ -1,0 +1,7 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    background: var(--deepblue);
+    gap: 90px;
+    padding-bottom: 90px
+}

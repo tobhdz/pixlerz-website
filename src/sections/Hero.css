@@ -1,0 +1,14 @@
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #030812;
+    padding-inline: 50px;
+    box-sizing: border-box;
+}
+
+.hero-container img {
+    width: 100%;
+    max-width: 800px;
+}

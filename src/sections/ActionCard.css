@@ -1,0 +1,131 @@
+.actioncard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 25px;
+}
+
+.actioncard {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    background: var(--darkblue);
+    border: 1px solid #ffffff56;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.actioncard-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.discs {
+    display: flex
+}
+
+.discs div {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #2F4E8A;
+    border: 1px solid #ffffff45;
+    margin-right: -15px;
+
+    &:last-child {
+        margin-right: 0
+    }
+}
+
+.puntuation {
+    font-size: 13px;
+    color: #7A93C1;
+
+    svg {
+        color: white;
+    }
+}
+
+.actioncard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        color: #C2C2C2;
+        padding-inline: 100px;
+        font-weight: 400
+    }
+    
+}
+
+.actioncard-button {
+    display: flex;
+    gap: 10px;
+    background: var(--sanguine);
+    border: 1px solid #FFFFFF35;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+
+    span {
+        position: relative;
+    }
+
+    svg {
+        font-size: 18px;
+        transform: translateX(2px);
+    }
+
+    &:hover {
+        border: 1px solid white;
+    }
+
+    &:hover:before {
+        width: 100%;
+    }
+}
+
+.actioncard-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--darkblue);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    .actioncard-content {
+        p {
+            padding: 0;
+        }
+    }
+}

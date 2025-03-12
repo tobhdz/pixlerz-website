@@ -1,0 +1,17 @@
+:root {
+  --deepblue: #162136;
+  --lightblue: #468FB9;
+  --cyan: #358AE2;
+  --darkblue: #395FA8;
+  --purple: #6B4997;
+  --pink: #BF428C;
+  --sanguine: #CC524A;
+  --ocher: #CF901A;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: white;
+    letter-spacing: 0.2px;
+    line-height: 1.3;
+}
