@@ -39,6 +39,11 @@
     font-weight: 500;
 }
 
+.navbar li:last-child a {
+    background: #3960a8;
+    border: 1px solid #ffffff15;
+}
+
 .navbar a:hover {
     background: #9baed31f;
 }
