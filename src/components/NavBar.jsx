@@ -6,7 +6,7 @@ export default function NavBar() {
     <div className="navbar">
         <ul>
             <li>
-                <img src="./public/img/pixlerzicon.png" alt="Logo" className='logo' />
+                <img src="./img/pixlerzicon.png" alt="Logo" className='logo' />
             </li>
             <li>
                 <a href="/">Home</a>
