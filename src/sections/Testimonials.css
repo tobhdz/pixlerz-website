@@ -1,3 +1,122 @@
 .testimonials-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    padding: 40px 0;
+}
+
+.testimonials-container h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonials-columns-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+}
+
+.testimonials-columns-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #162136, #16213650, transparent, #16213650, #162136);
+    z-index: 1
+}
+
+.testimonials-column {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 600px;
+    will-change: transform;
+}
+
+.testimonial-card {
+    height: 200px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.testimonials-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    flex-shrink: 0;
+    animation: scrollTestimonials 20s linear infinite;
+    will-change: transform;
+}
+
+.testimonials-slide:first-child::before {
     display: none;
+}
+
+.testimonials-column.testimonials-reverse .testimonials-slide {
+    animation: scrollTestimonialsReverse 20s linear infinite;
+}
+
+.testimonials-column.testimonials-reverse .testimonials-slide:first-child {
+    transform: translateY(calc(-100%));
+}
+
+@keyframes scrollTestimonials {
+    to {
+        transform: translateY(calc(-100%));
+    }
+}
+
+@keyframes scrollTestimonialsReverse {
+    from {
+        transform: translateY(calc(-100%));
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.testimonials-slide {
+    animation-timing-function: cubic-bezier(0.1, 0, 0.9, 1);
+}
+
+@keyframes appearTestimonials {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(50px) scale(1.1);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0) scale(1);
+    }
+}
+
+.testimonials-container.visible .testimonials-column {
+    animation: appearTestimonials 0.6s ease-in-out forwards;
+}
+
+.testimonial-image,
+.testimonial-content {
+    flex-shrink: 0;
+}
+
+/* Para debugging, puedes agregar bordes temporales */
+.testimonial-card {
+    /* border: 1px solid red; */
 }

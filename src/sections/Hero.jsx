@@ -4,7 +4,7 @@ import './Hero.css'
 export default function Hero() {
   return (
     <div className="hero-container">
-        <img src="./public/img/pixlerztext.png" alt="Pixlerz" />
+        <img src="./img/pixlerztext.png" alt="Pixlerz" />
     </div>
   )
 }
