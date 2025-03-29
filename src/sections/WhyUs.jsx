@@ -1,7 +1,7 @@
 import React from "react";
 import "./WhyUs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faEye, faMagicWandSparkles } from "@fortawesome/free-solid-svg-icons";
 
 export default function WhyUs() {
   return (
@@ -27,7 +27,7 @@ export default function WhyUs() {
         </div>
         <div className="whyus-card">
           <div className="icon icon-2">
-            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faEye} />
           </div>
           <h5>Engaging, Powerful Websites</h5>
           <p>
@@ -37,7 +37,7 @@ export default function WhyUs() {
         </div>
         <div className="whyus-card">
           <div className="icon icon-3">
-            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faMagicWandSparkles} />
           </div>
           <h5>Custom-Tailored Solutions:</h5>
           <p>

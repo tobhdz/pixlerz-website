@@ -1,32 +1,33 @@
-import React from 'react'
-import './NavBar.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./NavBar.css";
 
 export default function NavBar() {
   return (
     <div className="navbar">
-        <ul>
-            <li>
-                <img src="./img/pixlerzicon.png" alt="Logo" className='logo' />
-            </li>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/logos">Logos</a>
-            </li>
-            <li>
-                <a href="/web-design">Web Design</a>
-            </li>
-            <li>
-                <a href="/social-media">Social Media</a>
-            </li>
-            <li>
-                <a href="/branding">Branding</a>
-            </li>
-            <li>
-                <a href="/lets-talk">Let's Talk</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <img src="./img/pixlerzicon.png" alt="Logo" className="logo" />
+        </li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/webdesign">Web Design</Link>
+        </li>
+        <li>
+          <Link to="/logos">Logos</Link>
+        </li>
+        <li>
+          <Link to="/socialmedia">Social Media</Link>
+        </li>
+        <li>
+          <Link to="/branding">Branding</Link>
+        </li>
+        <li>
+          <Link to="/letstalk">Let's Talk</Link>
+        </li>
+      </ul>
     </div>
   );
 }

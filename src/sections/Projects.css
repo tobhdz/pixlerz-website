@@ -20,6 +20,10 @@
     gap: 30px;
 }
 
+.projects.oblique {
+    transform: skewY(3deg);
+}
+
 .projects-slide {
     display: flex;
     align-items: center;
