@@ -4,6 +4,9 @@ import ServiceHead from "../sections/ServiceHead.jsx";
 import ObliqueProjects from "../sections/ObliqueProjects.jsx";
 import Problem from "../sections/Problem.jsx"
 import Solution from "../sections/Solution.jsx";
+import Benefits from "../sections/Benefits.jsx";
+import FAQs from "../sections/FAQs.jsx";
+import ActionCard from "../sections/ActionCard.jsx";
 
 export default function Landing() {
   return (
@@ -12,6 +15,9 @@ export default function Landing() {
       <ObliqueProjects />
       <Problem />
       <Solution />
+      <Benefits />
+      <FAQs />
+      <ActionCard />
     </div>
   );
 }

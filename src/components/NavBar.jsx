@@ -25,7 +25,7 @@ export default function NavBar() {
           <Link to="/branding">Branding</Link>
         </li>
         <li>
-          <Link to="/letstalk">Let's Talk</Link>
+          <Link to="/">Let's Talk</Link>
         </li>
       </ul>
     </div>

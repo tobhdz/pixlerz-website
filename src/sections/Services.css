@@ -20,6 +20,8 @@
     border-radius: 25px;
     font-size: 20px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 
     h3 {
         font-weight: 700;
@@ -28,10 +30,34 @@
     
     * {
         transition: all 0.3s ease;
+        z-index: 2;
+        text-shadow: 1px 1px var(--deepblue);
     }
 
     &:hover * {
         transform: translateY(-5px);
+    }
+
+    &:hover .image {
+        transform: scale(1.1)
+    }
+}
+
+.service .image {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.5;
+    pointer-events: none;
+
+    iframe {
+        width: 100%;
+        height: 100%;
     }
 }
 

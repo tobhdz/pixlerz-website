@@ -12,6 +12,7 @@
 }
 
 body {
+    background: var(--deepblue);
     font-family: 'Be Vietnam Pro', sans-serif;
     color: white;
     letter-spacing: 0.2px;
