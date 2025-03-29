@@ -9,8 +9,8 @@
 }
 
 .services-container .service {
-    max-width: 450px;
-    height: 250px;
+    width: 450px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -51,9 +51,15 @@
     background: linear-gradient(to bottom, #CF901A, #CC714A);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .services-container {
-        grid-template-columns: auto;
+            justify-content: stretch;
+            grid-template-columns: auto;
+            padding-inline: 25px;
+        }
+
+    .services-container .service {
+        width: 100%;
     }
 }
 

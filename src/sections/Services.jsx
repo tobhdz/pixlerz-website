@@ -7,25 +7,25 @@ export default function Services() {
             <div className="service">
                 <h3>Service</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+                    Lorem ipsum dolor sit amet.
                 </p>
             </div>
             <div className="service">
                 <h3>Service</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+                    Lorem ipsum dolor sit amet.
                 </p>
             </div>
             <div className="service">
                 <h3>Service</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+                    Lorem ipsum dolor sit amet.
                 </p>
             </div>
             <div className="service">
                 <h3>Service</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+                    Lorem ipsum dolor sit amet.
                 </p>
             </div>
         </div>

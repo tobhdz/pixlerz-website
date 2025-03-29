@@ -3,9 +3,47 @@ import "./Testimonials.css";
 import TestimonialCard from "../components/TestimonialCard";
 
 export default function Testimonials() {
+  const testimonios = [
+    {
+      nombre: "The Systems Effect",
+      subtitulo: "Derek Coffey",
+      texto:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      imagen: "/path/to/image1.jpg",
+    },
+    {
+      nombre: "Dynamic Solutions",
+      subtitulo: "Edgar Larios",
+      texto:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      imagen: "/path/to/image2.jpg",
+    },
+    {
+      nombre: "Aether Company",
+      subtitulo: "Norman Cook",
+      texto:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      imagen: "/path/to/image3.jpg",
+    },
+    {
+      nombre: "Results Staffing",
+      subtitulo: "Ruben Fuentes",
+      texto:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      imagen: "/path/to/image3.jpg",
+    },
+    {
+      nombre: "QLQ esta comida",
+      subtitulo: "Fernando Andres",
+      texto:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      imagen: "/path/to/image3.jpg",
+    },
+  ];
+
   return (
     <div className="testimonials-container" id="testimonials">
-      <h3>Lorem ipsum dolor sit</h3>
+      <h3>Lorem ipsum dolor sit amet</h3>
 
       <div className="testimonials-columns-container">
         <div className="testimonials-column">
@@ -15,21 +53,9 @@ export default function Testimonials() {
               className="testimonials-slide"
               aria-hidden={index === 1}
             >
-              <TestimonialCard
-                nombre="Client"
-                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imagen="/path/to/image1.jpg"
-              />
-              <TestimonialCard
-                nombre="Client"
-                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imagen="/path/to/image2.jpg"
-              />
-              <TestimonialCard
-                nombre="Client"
-                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imagen="/path/to/image3.jpg"
-              />
+              {testimonios.map((testimonio, i) => (
+                <TestimonialCard key={i} {...testimonio} />
+              ))}
             </div>
           ))}
         </div>
@@ -41,21 +67,9 @@ export default function Testimonials() {
               className="testimonials-slide"
               aria-hidden={index === 1}
             >
-              <TestimonialCard
-                nombre="Client"
-                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imagen="/path/to/image4.jpg"
-              />
-              <TestimonialCard
-                nombre="Client"
-                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imagen="/path/to/image5.jpg"
-              />
-              <TestimonialCard
-                nombre="Client"
-                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imagen="/path/to/image6.jpg"
-              />
+              {testimonios.map((testimonio, i) => (
+                <TestimonialCard key={i} {...testimonio} />
+              ))}
             </div>
           ))}
         </div>
@@ -67,21 +81,9 @@ export default function Testimonials() {
               className="testimonials-slide"
               aria-hidden={index === 1}
             >
-              <TestimonialCard
-                nombre="Client"
-                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imagen="/path/to/image7.jpg"
-              />
-              <TestimonialCard
-                nombre="Client"
-                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imagen="/path/to/image8.jpg"
-              />
-              <TestimonialCard
-                nombre="Client"
-                texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imagen="/path/to/image9.jpg"
-              />
+              {[...testimonios].reverse().map((testimonio, i) => (
+                <TestimonialCard key={i} {...testimonio} />
+              ))}
             </div>
           ))}
         </div>
