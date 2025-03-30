@@ -150,4 +150,8 @@
     .servicehead {
         padding: 40px 20px;
     }
+
+    .servicehead-button {
+        border: 1px solid white;
+    }
 }

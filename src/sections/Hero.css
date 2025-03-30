@@ -6,6 +6,7 @@
     background: #030812;
     padding-inline: 50px;
     box-sizing: border-box;
+    box-shadow: 0px 1px #ffffff27;
 }
 
 .hero-container img {

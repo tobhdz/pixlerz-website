@@ -30,6 +30,9 @@ export default function ObliqueProjects() {
 
   return (
     <div className="projects-container" id="projects">
+      <video autoplay="autoplay" muted loop="true" className="curvesvideo">
+        <source src="./public/img/curves.mp4" type="video/mp4" />
+      </video>
       <div className="projects oblique">
         {[1, 2].map((_, index) => (
           <div key={index} className="projects-slide" aria-hidden={index === 1}>
@@ -39,7 +42,6 @@ export default function ObliqueProjects() {
           </div>
         ))}
       </div>
-
     </div>
   );
 }
