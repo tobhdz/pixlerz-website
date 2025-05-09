@@ -9,6 +9,7 @@ import WebDevelopment from "./pages/WebDevelopment";
 import LogoDesign from "./pages/LogoDesign";
 import SocialMedia from "./pages/SocialMedia";
 import Branding from "./pages/Branding";
+import FormPage from "./pages/FormPage";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/logodesign" element={<LogoDesign />} />
         <Route path="/socialmedia" element={<SocialMedia />} />
         <Route path="/branding" element={<Branding />} />
-        <Route path="/letstalk" element={<Service />} />
+        <Route path="/form" element={<FormPage />} />
       </Routes>
       <Footer />
     </>
