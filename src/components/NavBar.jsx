@@ -13,10 +13,10 @@ export default function NavBar() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/webdesign">Web Design</Link>
+          <Link to="/webdevelopment">Web Development</Link>
         </li>
         <li>
-          <Link to="/logos">Logos</Link>
+          <Link to="/logodesign">Logo Design</Link>
         </li>
         <li>
           <Link to="/socialmedia">Social Media</Link>

@@ -83,7 +83,7 @@
     display: flex;
     gap: 10px;
     background: var(--deepblue);
-    border: 1px solid #FFFFFF35;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 18px;
@@ -106,6 +106,7 @@
 
     &:hover {
         border: 1px solid white;
+        color: var(--deepblue)
     }
 
     &:hover:before {
@@ -120,7 +121,7 @@
     left: 0;
     width: 0%;
     height: 100%;
-    background: var(--darkblue);
+    background: white;
     transition: all 0.3s ease;
 }
 

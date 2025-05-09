@@ -13,8 +13,8 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/webdesign" element={<Service />} />
-        <Route path="/logos" element={<Service />} />
+        <Route path="/webdevelopment" element={<Service />} />
+        <Route path="/logodesign" element={<Service />} />
         <Route path="/socialmedia" element={<Service />} />
         <Route path="/branding" element={<Service />} />
         <Route path="/letstalk" element={<Service />} />

@@ -1,7 +1,11 @@
 import React from "react";
 import "./WhyUs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faEye, faMagicWandSparkles } from "@fortawesome/free-solid-svg-icons";
+import {
+  faStar,
+  faEye,
+  faMagicWandSparkles,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function WhyUs() {
   return (
@@ -20,9 +24,9 @@ export default function WhyUs() {
           <h5>Pixlerz Expertise</h5>
           <p>
             Backed by a proven track record, Pixlerz delivers cutting-edge
-            design and development solutions tailored to elevate your brand. Our
-            team combines creativity and technical expertise to create websites
-            that stand out and convert.
+            development and development solutions tailored to elevate your
+            brand. Our team combines creativity and technical expertise to
+            create websites that stand out and convert.
           </p>
         </div>
         <div className="whyus-card">
@@ -31,8 +35,8 @@ export default function WhyUs() {
           </div>
           <h5>Engaging, Powerful Websites</h5>
           <p>
-            We design websites that captivate your audience, keep them engaged,
-            and drive meaningful interactions with your brand.
+            We development websites that captivate your audience, keep them
+            engaged, and drive meaningful interactions with your brand.
           </p>
         </div>
         <div className="whyus-card">
@@ -49,7 +53,7 @@ export default function WhyUs() {
       </div>
       <div className="whyus-box">
         <div className="whyus-box-content">
-          <h4>Innovating digital experiences with Pixlerz</h4>
+          <h4>Innovating digital <br></br> experiences with Pixlerz</h4>
           <p className="whyus-box-desc">
             Say goodbye to inexperienced teams. Pixlerz offers a refined and
             efficient approach to meet your needs.
@@ -65,8 +69,8 @@ export default function WhyUs() {
             <div className="whyus-box-sub-item">
               <h5>🔗 Scalable Solutions</h5>
               <p>
-                Our websites are designed to evolve with your business, ensuring
-                seamless growth and adaptability.
+                Our websites are developmented to evolve with your business,
+                ensuring seamless growth and adaptability.
               </p>
             </div>
             <div className="whyus-box-sub-item">
@@ -99,7 +103,6 @@ export default function WhyUs() {
             </div>
           </div>
         </div>
-        <div className="whyus-img"></div>
       </div>
     </div>
   );

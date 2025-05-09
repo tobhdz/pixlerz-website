@@ -254,7 +254,7 @@ var require_set_cookie = __commonJS({
           })];
           if (!sch && input.headers.cookie && !options.silent) {
             console.warn(
-              "Warning: set-cookie-parser appears to have been called on a request object. It is designed to parse Set-Cookie headers from responses, not Cookie headers from requests. Set the option {silent: true} to suppress this warning."
+              "Warning: set-cookie-parser appears to have been called on a request object. It is developmented to parse Set-Cookie headers from responses, not Cookie headers from requests. Set the option {silent: true} to suppress this warning."
             );
           }
           input = sch;

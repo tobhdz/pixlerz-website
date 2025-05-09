@@ -1,14 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --deepblue: #162136;
+  --deepblue: #03070d;
   --lightblue: #468FB9;
   --cyan: #358AE2;
-  --darkblue: #395FA8;
-  --purple: #6B4997;
-  --pink: #BF428C;
-  --sanguine: #CC524A;
-  --ocher: #CF901A;
+  --darkblue: #293b6fb0;
 }
 
 body {

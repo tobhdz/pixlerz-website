@@ -11,7 +11,7 @@
     mix-blend-mode: lighten;
     position: absolute;
     margin-top: -500px;
-    filter: blur(100px) hue-rotate(-40deg);
+    filter: blur(100px) sepia() hue-rotate(-170deg) saturate(2);
     pointer-events: none;
     min-width: 1000px;
 }

@@ -1,10 +1,10 @@
-import React from 'react'
-import "./ActionCard.css"
+import React from "react";
+import "./ActionCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function ActionCard() {
+export default function ActionCard({ title, description, buttonText, rating }) {
   return (
     <div className="actioncard-container">
       <div className="actioncard">
@@ -22,17 +22,16 @@ export default function ActionCard() {
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
-            <p>+000</p>
+            <p>{rating}</p>
           </div>
         </div>
         <div className="actioncard-content">
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <p>
-            Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.
-          </p>
-          <button class="actioncard-button">
-            <span>Call to action</span>
-            <FontAwesomeIcon icon={faArrowRight} /></button>
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <button className="actioncard-button">
+            <span>{buttonText}</span>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </button>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@
     font-size: 20px;
     margin-bottom: 64px;
     text-align: center;
-    color: #ffffff75;
+    color: #7c7d8f;
 }
 
 .benefits-grid {
@@ -37,7 +37,7 @@
     flex: 0 1 calc(33.333% - 32px);
     min-width: 300px;
     padding: 32px;
-    background: linear-gradient(#2E415C, #1C3557);
+    background: linear-gradient(#3e4981, #10294b);
     border: 1px solid #FFFFFF34;
     border-radius: 20px;
 }
@@ -46,13 +46,13 @@
     font-size: 24px;
     margin-bottom: 16px;
     font-weight: 500;
-    color: #c8d5e7;
+    color: #ffffff;
     text-align: center;
 }
 
 .benefit-item p {
     font-size: 16px;
-    color: #ffffff6c;
+    color: #a8aecf;
     font-weight: 300;
     margin: 0;
 }

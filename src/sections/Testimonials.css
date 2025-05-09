@@ -32,7 +32,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #162136, #16213650, transparent, #16213650, #162136);
+    background: linear-gradient(to bottom, var(--deepblue), #03070d7a, transparent, #03070d7a, var(--deepblue));
     z-index: 1;
     transform: scaley(1.005);
 }

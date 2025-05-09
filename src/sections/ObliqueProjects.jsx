@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import "./Projects.css";
 import ProjectCard from "../components/ProjectCard";
 
-export default function ObliqueProjects() {
+export default function ObliqueProjects({ projects = [] }) {
   const titleRef = useRef(null);
 
   useEffect(() => {
@@ -30,15 +30,15 @@ export default function ObliqueProjects() {
 
   return (
     <div className="projects-container" id="projects">
-      <video autoplay="autoplay" muted loop="true" className="curvesvideo">
+      <video autoPlay muted loop className="curvesvideo">
         <source src="./public/img/curves.mp4" type="video/mp4" />
       </video>
       <div className="projects oblique">
         {[1, 2].map((_, index) => (
           <div key={index} className="projects-slide" aria-hidden={index === 1}>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            {projects.map((project, projectIndex) => (
+              <ProjectCard key={projectIndex} {...project} />
+            ))}
           </div>
         ))}
       </div>

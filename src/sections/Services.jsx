@@ -5,33 +5,57 @@ import "./Services.css";
 export default function Services() {
   return (
     <div className="services-container">
-      <Link to="/webdesign" className="service">
+      <Link to="/webdevelopment" className="service">
         <div className="image">
-          <iframe src="https://lottie.host/embed/82c09bc3-189b-4499-9929-8fd34ccca64e/jaSWWrJejT.lottie"></iframe>
+          <img src="./img/development.png" alt="Web Development" />
         </div>
-        <h3>Web Design</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <div className="service-details">
+          <h3>Web Development</h3>
+          <span>Starting at $1500</span>
+        </div>
+        <p>Dolor sit amet.</p>
       </Link>
-      <Link to="/logos" className="service">
+      <Link to="/logodesign" className="service">
         <div className="image">
-          <iframe src="https://lottie.host/embed/8321e9a0-090c-4f8f-8710-39a5a5d76a85/rPl6SwPz9M.lottie"></iframe>
+          <video
+            src="./img/pixlerz.mp4"
+            alt="Logo Design"
+            autoPlay
+            muted
+            loop
+          />
         </div>
-        <h3>Logos</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <div className="service-details">
+          <h3>Logo Design</h3>
+          <span>Starting at $1000</span>
+        </div>
+        <p>Dolor sit amet.</p>
       </Link>
       <Link to="/social-media" className="service">
         <div className="image">
-          <iframe src="https://lottie.host/embed/f65951f0-4ee4-447d-87f4-8d6c80e65bf5/e9ogpwntTr.lottie"></iframe>
+          <video
+            src="./img/socialmedia.mp4"
+            alt="Social Media"
+            autoPlay
+            muted
+            loop
+          />
         </div>
-        <h3>Social Media</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <div className="service-details">
+          <h3>Social Media</h3>
+          <span>Starting at $2000</span>
+        </div>
+        <p>Dolor sit amet.</p>
       </Link>
       <Link to="/branding" className="service">
         <div className="image">
-          <iframe src="https://lottie.host/embed/044d5d33-c034-4286-a554-e4e4ac97427f/PWL3tcCqP5.lottie"></iframe>
+          <img src="./img/branding.png" alt="Branding" />
         </div>
-        <h3>Branding</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <div className="service-details">
+          <h3>Branding</h3>
+          <span>Starting at $*</span>
+        </div>
+        <p>Dolor sit amet.</p>
       </Link>
     </div>
   );

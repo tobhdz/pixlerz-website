@@ -15,8 +15,9 @@
     justify-content: center;
     gap: 30px;
     padding: 50px;
-    background: var(--darkblue);
-    border: 1px solid #ffffff56;
+    background: linear-gradient(var(--darkblue), var(--deepblue));
+    box-shadow: 0 0 20px rgb(54, 62, 99), 0 0 80px rgb(34, 38, 73);
+    border: 1px solid #484b6b;
     border-radius: 10px;
     box-sizing: border-box;
 }
@@ -104,6 +105,7 @@
 
     &:hover {
         border: 1px solid white;
+        color: var(--deepblue);
     }
 
     &:hover:before {
@@ -118,7 +120,7 @@
     left: 0;
     width: 0%;
     height: 100%;
-    background: var(--darkblue);
+    background: white;
     transition: all 0.3s ease;
 }
 
