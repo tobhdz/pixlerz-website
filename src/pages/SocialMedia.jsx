@@ -10,7 +10,7 @@ import ActionCard from "../sections/ActionCard.jsx";
 
 const serviceContent = {
   serviceHead: {
-    title: "Lorem ipsum dolor sit amet",
+    title: "Socials ipsum dolor sit amet",
     description:
       "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
     buttonText: "Button",
@@ -20,7 +20,16 @@ const serviceContent = {
   obliqueProjects: {
     projects: [
       {
-        imagen: "",
+        imagen: "./img/socials/ResultsStaffing-socials.webp",
+      },
+      {
+        imagen: "./img/socials/TheSystemsEffect-socials.webp",
+      },
+      {
+        imagen: "./img/socials/ResultsStaffing-socials.webp",
+      },
+      {
+        imagen: "./img/socials/TheSystemsEffect-socials.webp",
       },
     ],
   },

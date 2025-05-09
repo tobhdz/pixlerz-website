@@ -10,7 +10,7 @@ import ActionCard from "../sections/ActionCard.jsx";
 
 const serviceContent = {
   serviceHead: {
-    title: "Lorem ipsum dolor sit amet",
+    title: "Branding ipsum dolor sit amet",
     description:
       "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
     buttonText: "Button",
@@ -20,7 +20,22 @@ const serviceContent = {
   obliqueProjects: {
     projects: [
       {
-        imagen: "",
+        imagen: "./img/branding/DynamicFunding1-branding.webp",
+      },
+      {
+        imagen: "./img/branding/DynamicFunding2-branding.webp",
+      },
+      {
+        imagen: "./img/branding/ResultsStaffing1-branding.webp",
+      },
+      {
+        imagen: "./img/branding/ResultsStaffing2-branding.webp",
+      },
+      {
+        imagen: "./img/branding/WeEndeavor1-branding.webp",
+      },
+      {
+        imagen: "./img/branding/WeEndeavor2-branding.webp",
       },
     ],
   },
