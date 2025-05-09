@@ -9,35 +9,42 @@ export default function Testimonials() {
       subtitulo: "Derek Coffey",
       texto:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imagen: "/path/to/image1.jpg",
+      imagen: "./img/clients/Derek.webp",
     },
     {
       nombre: "Dynamic Solutions",
       subtitulo: "Edgar Larios",
       texto:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imagen: "/path/to/image2.jpg",
+      imagen: "./img/clients/EdgarLarios.webp",
     },
     {
       nombre: "Aether Company",
       subtitulo: "Norman Cook",
       texto:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imagen: "/path/to/image3.jpg",
+      imagen: "./img/clients/Norman.webp",
     },
     {
       nombre: "Results Staffing",
       subtitulo: "Ruben Fuentes",
       texto:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imagen: "/path/to/image3.jpg",
+      imagen: "./img/clients/RubenFuentes.webp",
     },
     {
       nombre: "QLQ esta comida",
       subtitulo: "Fernando Andres",
       texto:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imagen: "/path/to/image3.jpg",
+      imagen: "./img/clients/FernandoAndres.webp",
+    },
+    {
+      nombre: "Dynamic Funding",
+      subtitulo: "David",
+      texto:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      imagen: "./img/clients/David.webp",
     },
   ];
 
