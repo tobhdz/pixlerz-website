@@ -165,13 +165,14 @@
         padding: 0px;
         gap: 30px;
         background-size: cover;
+        background-position: 650px;
         border: 1px solid #b9aee275;
     }
         
     .whyus-box-content {
         width: 100%;
         align-items: flex-start;
-        padding: 30px;
+        padding: 40px 30px;
         background: #3745667e;
         border: 0;
         backdrop-filter: none;
