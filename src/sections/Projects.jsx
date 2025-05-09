@@ -5,6 +5,45 @@ import ProjectCard from "../components/ProjectCard";
 export default function Projects() {
   const titleRef = useRef(null);
 
+  const dynamicFundingProjects = [
+    {
+      imagen: "./img/websites/DynamicFunding-web.webp",
+    },
+    {
+      imagen: "./img/branding/DynamicFunding1-branding.webp",
+    },
+    {
+      imagen: "./img/branding/DynamicFunding2-branding.webp",
+    },
+  ];
+
+  const systemsEffectProjects = [
+    {
+      imagen: "./img/websites/TheSystemsEffect-web.webp",
+    },
+    {
+      imagen: "./img/socials/TheSystemsEffect-socials.webp",
+    },
+    {
+      imagen: "./img/logos/TheSystemEffects-logo.webp",
+    },
+  ];
+
+  const resultsStaffingProjects = [
+    {
+      imagen: "./img/branding/ResultsStaffing1-branding.webp",
+    },
+    {
+      imagen: "./img/branding/ResultsStaffing2-branding.webp",
+    },
+    {
+      imagen: "./img/socials/ResultsStaffing-socials.webp",
+    },
+    {
+      imagen: "./img/logos/ResultsStaffing-logo.webp",
+    },
+  ];
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -30,13 +69,12 @@ export default function Projects() {
 
   return (
     <div className="projects-container" id="projects">
-
       <div className="projects">
         {[1, 2].map((_, index) => (
           <div key={index} className="projects-slide" aria-hidden={index === 1}>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            {dynamicFundingProjects.map((project, i) => (
+              <ProjectCard key={i} {...project} />
+            ))}
           </div>
         ))}
       </div>
@@ -44,9 +82,9 @@ export default function Projects() {
       <div className="projects projects-reverse">
         {[1, 2].map((_, index) => (
           <div key={index} className="projects-slide" aria-hidden={index === 1}>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            {systemsEffectProjects.map((project, i) => (
+              <ProjectCard key={i} {...project} />
+            ))}
           </div>
         ))}
       </div>
@@ -54,9 +92,9 @@ export default function Projects() {
       <div className="projects">
         {[1, 2].map((_, index) => (
           <div key={index} className="projects-slide" aria-hidden={index === 1}>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            {resultsStaffingProjects.map((project, i) => (
+              <ProjectCard key={i} {...project} />
+            ))}
           </div>
         ))}
       </div>
