@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ActionCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -28,10 +29,12 @@ export default function ActionCard({ title, description, buttonText, rating }) {
         <div className="actioncard-content">
           <h3>{title}</h3>
           <p>{description}</p>
-          <button className="actioncard-button">
-            <span>{buttonText}</span>
-            <FontAwesomeIcon icon={faArrowRight} />
-          </button>
+          <Link to="/form">
+            <button className="actioncard-button">
+              <span>{buttonText}</span>
+              <FontAwesomeIcon icon={faArrowRight} />
+            </button>
+          </Link>
         </div>
       </div>
     </div>

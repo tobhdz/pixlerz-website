@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ServiceHead.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
@@ -35,13 +36,17 @@ export default function ServiceHead({
           <h3>{title}</h3>
           <p>{description}</p>
           <div className="servicehead-button-box">
-            <button className="servicehead-button">
-              <span>{buttonText}</span>
-              <FontAwesomeIcon icon={faArrowRight} />
-            </button>
-            <button className="servicehead-button2">
-              <span>{buttonText2}</span>
-            </button>
+            <Link to="/form">
+              <button className="servicehead-button">
+                <span>{buttonText}</span>
+                <FontAwesomeIcon icon={faArrowRight} />
+              </button>
+            </Link>
+            <Link to="/form">
+              <button className="servicehead-button2">
+                <span>{buttonText2}</span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
