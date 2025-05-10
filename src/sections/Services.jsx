@@ -23,6 +23,10 @@ export default function Services() {
             autoPlay
             muted
             loop
+            playsInline
+            preload="auto"
+            disablePictureInPicture
+            disableRemotePlayback
           />
         </div>
         <div className="service-details">
@@ -39,6 +43,10 @@ export default function Services() {
             autoPlay
             muted
             loop
+            playsInline
+            preload="auto"
+            disablePictureInPicture
+            disableRemotePlayback
           />
         </div>
         <div className="service-details">
@@ -53,7 +61,7 @@ export default function Services() {
         </div>
         <div className="service-details">
           <h3>Branding</h3>
-          <span>Starting at $*</span>
+          <span>Starting at $0</span>
         </div>
         <p>Dolor sit amet.</p>
       </Link>
