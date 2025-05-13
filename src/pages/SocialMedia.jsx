@@ -146,7 +146,9 @@ export default function Service() {
   return (
     <div className="service-container">
       <ServiceHead {...serviceContent.serviceHead} />
-      <ObliqueProjects {...serviceContent.obliqueProjects} />
+      <div className="projects-container social-slider">
+        <ObliqueProjects {...serviceContent.obliqueProjects} />
+      </div>
       <Problem {...serviceContent.problem} />
       <Solution {...serviceContent.solution} />
       <Benefits {...serviceContent.benefits} />

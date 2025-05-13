@@ -20,6 +20,18 @@ const serviceContent = {
   obliqueProjects: {
     projects: [
       {
+        imagen: "./img/branding/QLQEstaComida1-branding.webp",
+      },
+      {
+        imagen: "./img/branding/QLQEstaComida2-branding.webp",
+      },
+      {
+        imagen: "./img/branding/SupremeElectricSolutions1-branding.webp",
+      },
+      {
+        imagen: "./img/branding/SupremeElectricSolutions2-branding.webp",
+      },
+      {
         imagen: "./img/branding/DynamicFunding1-branding.webp",
       },
       {
@@ -152,7 +164,9 @@ export default function Service() {
   return (
     <div className="service-container">
       <ServiceHead {...serviceContent.serviceHead} />
-      <ObliqueProjects {...serviceContent.obliqueProjects} />
+      <div className="projects-container branding-slider">
+        <ObliqueProjects {...serviceContent.obliqueProjects} />
+      </div>
       <Problem {...serviceContent.problem} />
       <Solution {...serviceContent.solution} />
       <Benefits {...serviceContent.benefits} />

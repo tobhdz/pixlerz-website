@@ -29,17 +29,36 @@
     align-items: center;
     gap: 30px;
     flex-shrink: 0;
-    animation: scrollProjects 20s linear infinite;
+    animation: scrollProjects var(--slide-duration, 20s) linear infinite;
 }
-
 
 .projects.projects-reverse .projects-slide {
-    animation: scrollProjectsReverse 20s linear infinite;
+    animation: scrollProjectsReverse var(--slide-duration, 20s) linear infinite;
 }
-
 
 .projects.projects-reverse .projects-slide:first-child {
     transform: translateX(calc(-100% - 30px));
+}
+
+/* Velocidades específicas para cada página */
+.projects-container.home-slider {
+    --slide-duration: 20s;
+}
+
+.projects-container.web-slider {
+    --slide-duration: 20s;
+}
+
+.projects-container.logo-slider {
+    --slide-duration: 20s;
+}
+
+.projects-container.social-slider {
+    --slide-duration: 25s;
+}
+
+.projects-container.branding-slider {
+    --slide-duration: 40s;
 }
 
 @keyframes scrollProjects {

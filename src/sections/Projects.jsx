@@ -68,7 +68,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="projects-container" id="projects">
+    <div className="projects-container home-slider" id="projects">
       <div className="projects">
         {[1, 2].map((_, index) => (
           <div key={index} className="projects-slide" aria-hidden={index === 1}>
