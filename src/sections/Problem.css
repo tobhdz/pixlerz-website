@@ -28,11 +28,11 @@
 }
 
 .problem-box.left .list-container {
-    background: rgba(0, 0, 0, 0.089)
+    background: #03070d4a
 }
 
 .problem-box.right .list-container {
-    background: linear-gradient(20deg, transparent, var(--darkblue))
+    background: linear-gradient(20deg, #03070d4a, var(--darkblue))
 }
 
 .problem-box h2 {

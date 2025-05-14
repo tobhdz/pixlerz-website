@@ -1,15 +1,18 @@
 .cursor-trail {
     position: fixed;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(#8596dd, #405291, transparent);
+    width: 60vw;
+    height: 60vh;
+    background: radial-gradient(circle at center, #8596dd, #405291, transparent);
     border-radius: 50%;
     pointer-events: none;
     z-index: 5;
     transform: translate(-50%, -50%);
     will-change: transform;
-    filter: blur(30px);
+    filter: blur(100px);
     mix-blend-mode: screen;
+    opacity: 0.5;
+    left: 50%;
+    top: 50%;
 }
 
 .form-page .cursor-trail {
@@ -18,8 +21,9 @@
 
 .service,
 .actioncard,
-.footer-container,
+.whyus-cards,
 .projects,
+.footer-container,
 .faqs-container,
 .problem-container,
 .solution-container,
