@@ -7,6 +7,7 @@ import WhyUs from "../sections/WhyUs.jsx";
 import Testimonials from "../sections/Testimonials.jsx";
 import FAQs from "../sections/FAQs.jsx";
 import ActionCard from "../sections/ActionCard.jsx";
+import AnimatedSection from "../components/AnimatedSection.jsx";
 
 const landingContent = {
   faqs: {
@@ -43,11 +44,26 @@ export default function Landing() {
     <div className="landing-container">
       <Hero />
       <Services />
-      <Projects />
-      <WhyUs />
-      <Testimonials />
-      <FAQs {...landingContent.faqs} />
-      <ActionCard {...landingContent.actionCard} />
+
+      <AnimatedSection animation="fade-in-up" delay={200}>
+        <Projects />
+      </AnimatedSection>
+
+      <AnimatedSection animation="fade-in-right" delay={200}>
+        <WhyUs />
+      </AnimatedSection>
+
+      <AnimatedSection animation="fade-in-up" delay={200}>
+        <Testimonials />
+      </AnimatedSection>
+
+      <AnimatedSection animation="fade-in-left" delay={200}>
+        <FAQs {...landingContent.faqs} />
+      </AnimatedSection>
+
+      <AnimatedSection animation="fade-in-right" delay={200}>
+        <ActionCard {...landingContent.actionCard} />
+      </AnimatedSection>
     </div>
   );
 }

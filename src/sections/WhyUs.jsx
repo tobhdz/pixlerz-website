@@ -6,6 +6,7 @@ import {
   faEye,
   faMagicWandSparkles,
 } from "@fortawesome/free-solid-svg-icons";
+import AnimatedSection from "../components/AnimatedSection.jsx";
 
 export default function WhyUs() {
   return (
@@ -52,57 +53,61 @@ export default function WhyUs() {
         </div>
       </div>
       <div className="whyus-box">
-        <div className="whyus-box-content">
-          <h4>Innovating digital <br></br> experiences with Pixlerz</h4>
-          <p className="whyus-box-desc">
-            Say goodbye to inexperienced teams. Pixlerz offers a refined and
-            efficient approach to meet your needs.
-          </p>
-          <div className="whyus-box-sub">
-            <div className="whyus-box-sub-item">
-              <h5>📈 Comprehensive Strategy Development</h5>
-              <p>
-                We develop a holistic approach to align your online presence
-                with your business goals.
-              </p>
-            </div>
-            <div className="whyus-box-sub-item">
-              <h5>🔗 Scalable Solutions</h5>
-              <p>
-                Our websites are developmented to evolve with your business,
-                ensuring seamless growth and adaptability.
-              </p>
-            </div>
-            <div className="whyus-box-sub-item">
-              <h5>👨‍💻 Expert Team</h5>
-              <p>
-                Work with carefully selected professionals who bring specialized
-                expertise to every project.
-              </p>
-            </div>
-            <div className="whyus-box-sub-item">
-              <h5>🎨 Creative Excellence</h5>
-              <p>
-                Bold and innovative ideas tailored to elevate your brand’s
-                digital presence.
-              </p>
-            </div>
-            <div className="whyus-box-sub-item">
-              <h5>🔍 Strategic Customization</h5>
-              <p>
-                Fully customized campaigns and strategies that align with your
-                business objectives.
-              </p>
-            </div>
-            <div className="whyus-box-sub-item">
-              <h5>🤝 Reliable Partnership</h5>
-              <p>
-                A dependable team that values transparency, collaboration, and
-                long-term relationships.
-              </p>
+        <AnimatedSection animation="scale-in">
+          <div className="whyus-box-content">
+            <h4>
+              Innovating digital <br></br> experiences with Pixlerz
+            </h4>
+            <p className="whyus-box-desc">
+              Say goodbye to inexperienced teams. Pixlerz offers a refined and
+              efficient approach to meet your needs.
+            </p>
+            <div className="whyus-box-sub">
+              <div className="whyus-box-sub-item">
+                <h5>📈 Comprehensive Strategy Development</h5>
+                <p>
+                  We develop a holistic approach to align your online presence
+                  with your business goals.
+                </p>
+              </div>
+              <div className="whyus-box-sub-item">
+                <h5>🔗 Scalable Solutions</h5>
+                <p>
+                  Our websites are developmented to evolve with your business,
+                  ensuring seamless growth and adaptability.
+                </p>
+              </div>
+              <div className="whyus-box-sub-item">
+                <h5>👨‍💻 Expert Team</h5>
+                <p>
+                  Work with carefully selected professionals who bring
+                  specialized expertise to every project.
+                </p>
+              </div>
+              <div className="whyus-box-sub-item">
+                <h5>🎨 Creative Excellence</h5>
+                <p>
+                  Bold and innovative ideas tailored to elevate your brand's
+                  digital presence.
+                </p>
+              </div>
+              <div className="whyus-box-sub-item">
+                <h5>🔍 Strategic Customization</h5>
+                <p>
+                  Fully customized campaigns and strategies that align with your
+                  business objectives.
+                </p>
+              </div>
+              <div className="whyus-box-sub-item">
+                <h5>🤝 Reliable Partnership</h5>
+                <p>
+                  A dependable team that values transparency, collaboration, and
+                  long-term relationships.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
       </div>
     </div>
   );
