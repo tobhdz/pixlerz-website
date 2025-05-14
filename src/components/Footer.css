@@ -48,7 +48,7 @@
 
 .footer-btn {
   background: transparent;
-  border: 1px solid #39324a;
+  border: 1px solid #9998db63;
   color: #fff;
   border-radius: 8px;
   padding: 10px 18px;
@@ -62,8 +62,8 @@
 }
 .footer-btn:hover {
   border: 1px solid #fff;
-  color: #cac9f5;
-  background: #25214456;
+  color: #ffffff;
+  background: #21294456;
 }
 
 .footer-copyright {
