@@ -2,7 +2,7 @@
     position: fixed;
     width: 60vw;
     height: 60vh;
-    background: radial-gradient(circle at center, #627adb, #405291, transparent);
+    background: radial-gradient(circle at center, #8596dd, #405291, transparent);
     border-radius: 50%;
     pointer-events: none;
     z-index: 5;
@@ -15,8 +15,18 @@
     top: 50%;
 }
 
-.form-page .cursor-trail {
+body:has(.form-page) .cursor-trail {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+}
+
+.form-page .cursor-trail,
+.form-page ~ .cursor-trail {
     display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .service,

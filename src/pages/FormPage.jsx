@@ -23,7 +23,7 @@ export default function FormPage() {
   }, []);
 
   return (
-    <div className="formpage-container">
+    <div className="formpage-container form-page">
       <div data-tf-live="01JRZMPAY52RS7JTD7ARD2YQH1"></div>
     </div>
   );
