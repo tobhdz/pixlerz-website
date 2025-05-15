@@ -166,8 +166,15 @@
 
 @media (max-width: 900px) {
     .servicehead-content {
+        h3 {
+            font-size: 38px;
+        }
+        .instrument-italic {
+            font-size: 50px;
+        }
         p {
             padding: 0;
+            font-size: 18px;
         }
     }
 
@@ -177,5 +184,19 @@
 
     .servicehead-button {
         border: 1px solid white;
+    }
+
+    .servicehead-button:hover {
+        border: 1px solid white;
+        color: #FFFFFF;
+    }
+
+    .servicehead-button:hover:before {
+        width: 0%;
+    }
+
+    .servicehead-button2:hover {
+        background: white;
+        color: var(--darkblue);
     }
 }

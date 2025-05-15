@@ -134,4 +134,13 @@
     .actioncard {
         padding: 40px 20px;
     }
+
+    .actioncard-button:hover {
+        border: 1px solid white;
+        color: #FFFFFF;
+    }
+
+    .actioncard-button:hover:before {
+        width: 0%;
+    }
 }
