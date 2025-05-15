@@ -44,7 +44,8 @@ body:has(.form-page) .cursor-trail {
     z-index: 6;
 } 
 
-.whyus-box-content {
+.whyus-box-content,
+.servicehead-container {
     position: relative;
     z-index: 7;
 }

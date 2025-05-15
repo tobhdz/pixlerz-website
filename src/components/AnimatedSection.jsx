@@ -1,25 +1,26 @@
-import React from 'react';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import React from "react";
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
-const AnimatedSection = ({ 
-  children, 
-  animation = 'fade-in-up',
+const AnimatedSection = ({
+  children,
+  animation = "fade-in-up",
   delay = 0,
-  className = '',
-  ...props 
+  className = "",
+  zIndex = 6,
+  ...props
 }) => {
   const sectionRef = useIntersectionObserver();
 
   const getAnimationClass = () => {
     switch (animation) {
-      case 'fade-in-left':
-        return 'animate-fade-in-left';
-      case 'fade-in-right':
-        return 'animate-fade-in-right';
-      case 'scale-in':
-        return 'animate-scale-in';
+      case "fade-in-left":
+        return "animate-fade-in-left";
+      case "fade-in-right":
+        return "animate-fade-in-right";
+      case "scale-in":
+        return "animate-scale-in";
       default:
-        return 'animate-fade-in-up';
+        return "animate-fade-in-up";
     }
   };
 
@@ -27,7 +28,11 @@ const AnimatedSection = ({
     <section
       ref={sectionRef}
       className={`${getAnimationClass()} ${className}`}
-      style={{ animationDelay: `${delay}ms` }}
+      style={{
+        animationDelay: `${delay}ms`,
+        position: "relative",
+        zIndex: zIndex,
+      }}
       {...props}
     >
       {children}
@@ -35,4 +40,4 @@ const AnimatedSection = ({
   );
 };
 
-export default AnimatedSection; 
+export default AnimatedSection;

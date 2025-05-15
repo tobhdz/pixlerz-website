@@ -5,13 +5,35 @@
     gap: 90px;
     padding-bottom: 90px;
     padding-top: 200px;
+    position: relative;
 }
 
 .service-container .curvesvideo {
     mix-blend-mode: lighten;
     position: absolute;
     margin-top: -500px;
-    filter: blur(100px) sepia() hue-rotate(-170deg) saturate(2);
+    filter: sepia() hue-rotate(-170deg) saturate(2);
     pointer-events: none;
     min-width: 1000px;
+}
+
+.curvesvideo-service-page {
+    mix-blend-mode: lighten;
+    position: absolute;
+    margin-top: -128px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    filter: sepia() hue-rotate(-170deg) saturate(2);
+    pointer-events: none;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    opacity: 1; /* Opacidad reducida para fondo */
+}
+
+@media (max-width: 768px) {
+  .curvesvideo-service-page {
+    height: 120vh;
+  }
 }

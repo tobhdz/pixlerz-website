@@ -49,7 +49,7 @@ export default function Landing() {
         <Projects />
       </AnimatedSection>
 
-      <AnimatedSection animation="fade-in-right" delay={200}>
+      <AnimatedSection animation="fade-in-right" delay={200} zIndex={7}>
         <WhyUs />
       </AnimatedSection>
 

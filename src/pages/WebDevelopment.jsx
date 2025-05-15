@@ -7,6 +7,7 @@ import Solution from "../sections/Solution.jsx";
 import Benefits from "../sections/Benefits.jsx";
 import FAQs from "../sections/FAQs.jsx";
 import ActionCard from "../sections/ActionCard.jsx";
+import AnimatedSection from "../components/AnimatedSection.jsx";
 
 const serviceContent = {
   serviceHead: {
@@ -145,15 +146,41 @@ const serviceContent = {
 export default function Service() {
   return (
     <div className="service-container">
-      <ServiceHead {...serviceContent.serviceHead} />
-      <div className="projects-container web-slider">
-        <ObliqueProjects {...serviceContent.obliqueProjects} />
-      </div>
-      <Problem {...serviceContent.problem} />
-      <Solution {...serviceContent.solution} />
-      <Benefits {...serviceContent.benefits} />
-      <FAQs {...serviceContent.faqs} />
-      <ActionCard {...serviceContent.actionCard} />
+      <AnimatedSection animation="scale-in" zIndex={7}>
+        <ServiceHead {...serviceContent.serviceHead} />
+      </AnimatedSection>
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        disablePictureInPicture
+        disableRemotePlayback
+        loading="lazy"
+        className="curvesvideo-service-page"
+        src="./img/curves.mp4"
+      />
+      <AnimatedSection animation="fade-in-up">
+        <div className="projects-container web-slider">
+          <ObliqueProjects {...serviceContent.obliqueProjects} />
+        </div>
+      </AnimatedSection>
+      <AnimatedSection animation="fade-in-left">
+        <Problem {...serviceContent.problem} />
+      </AnimatedSection>
+      <AnimatedSection animation="fade-in-right">
+        <Solution {...serviceContent.solution} />
+      </AnimatedSection>
+      <AnimatedSection animation="fade-in-up">
+        <Benefits {...serviceContent.benefits} />
+      </AnimatedSection>
+      <AnimatedSection animation="fade-in-left">
+        <FAQs {...serviceContent.faqs} />
+      </AnimatedSection>
+      <AnimatedSection animation="fade-in-right">
+        <ActionCard {...serviceContent.actionCard} />
+      </AnimatedSection>
     </div>
   );
 }
