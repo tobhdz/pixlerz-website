@@ -11,7 +11,7 @@ import AnimatedSection from "../components/AnimatedSection.jsx";
 
 const serviceContent = {
   serviceHead: {
-    title: "Web ipsum dolor sit amet",
+    title: "Web *ipsum* dolor sit amet💙",
     description:
       "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
     buttonText: "Button",

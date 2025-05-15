@@ -5,6 +5,7 @@
   --lightblue: #468FB9;
   --cyan: #358AE2;
   --darkblue: #293b6fb0;
+  --transition-duration: 0.3s;
 }
 
 * {
@@ -79,6 +80,17 @@ body {
   }
 }
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Clases de animación */
 .animate-fade-in-up {
   opacity: 0;
@@ -104,6 +116,12 @@ body {
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
+.animate-star-fade-in-down {
+  opacity: 0;
+  animation: fadeInDown 0.5s ease forwards;
+  animation-play-state: paused;
+}
+
 /* Estado visible */
 .animate-fade-in-up.visible,
 .animate-fade-in-left.visible,
@@ -111,6 +129,10 @@ body {
 .animate-scale-in.visible {
   opacity: 1;
   transform: translate(0) scale(1);
+}
+
+.animate-star-fade-in-down.visible {
+  animation-play-state: running;
 }
 
 /* Retrasos de animación */
