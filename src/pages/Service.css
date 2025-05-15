@@ -36,4 +36,7 @@
   .curvesvideo-service-page {
     height: 120vh;
   }
+  .service-container {
+    padding-top: 110px;
+  }
 }

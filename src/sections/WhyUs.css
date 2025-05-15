@@ -94,7 +94,7 @@
     gap: 60px;
     padding: 50px;
     padding-left: 100px;
-    background: url(/img/spaceship.png);
+    background: url(/img/spaceship-transparency2.png);
     background-size: cover;
     background-position: center;
     border-radius: 60px;
@@ -118,7 +118,7 @@
     gap: 10px;
     background: linear-gradient(120deg, #7690c733, #5d74a71a);
     border: 1px solid #707ea7;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     padding: 50px;
     padding-top: 20px;
     border-radius: 20px;

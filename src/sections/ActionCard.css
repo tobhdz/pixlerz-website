@@ -18,7 +18,7 @@
     padding: 50px;
     background: linear-gradient(var(--darkblue), var(--deepblue));
     box-shadow: 0 0 20px rgb(54, 62, 99), 0 0 80px rgb(34, 38, 73);
-    border: 1px solid #484b6b;
+    border: 1px solid #5f7c979e;
     border-radius: 10px;
     box-sizing: border-box;
 }
