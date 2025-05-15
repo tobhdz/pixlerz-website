@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./WhyUs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,6 +9,31 @@ import {
 import AnimatedSection from "../components/AnimatedSection.jsx";
 
 export default function WhyUs() {
+  const boxContentRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    if (boxContentRef.current) {
+      observer.observe(boxContentRef.current);
+    }
+
+    return () => {
+      if (boxContentRef.current) {
+        observer.unobserve(boxContentRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="whyus-container">
       <h3>Why Choose Us?</h3>
@@ -54,7 +79,7 @@ export default function WhyUs() {
       </div>
       <div className="whyus-box">
         <AnimatedSection animation="scale-in">
-          <div className="whyus-box-content">
+          <div className="whyus-box-content" ref={boxContentRef}>
             <h4>
               Innovating digital <br></br> experiences with Pixlerz
             </h4>

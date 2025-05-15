@@ -122,6 +122,7 @@
     padding: 50px;
     padding-top: 20px;
     border-radius: 20px;
+    transition: background 0.3s ease-in-out;
 }
 
 .whyus-box-desc {
@@ -174,10 +175,14 @@
         width: 100%;
         align-items: flex-start;
         padding: 40px 30px;
-        background: #3745667e;
+        background: transparent;
         border: 0;
         backdrop-filter: none;
         margin: 0;
+    }
+
+    .whyus-box-content.visible {
+        background: #191b217e;
     }
         
     .whyus-box-sub {
