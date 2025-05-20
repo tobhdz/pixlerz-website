@@ -35,7 +35,7 @@ const landingContent = {
     description:
       "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
     buttonText: "Call to action",
-    rating: "+000",
+    rating: "+32 Projects completed",
   },
 };
 

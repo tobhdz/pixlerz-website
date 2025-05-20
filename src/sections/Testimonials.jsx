@@ -12,18 +12,11 @@ export default function Testimonials() {
       imagen: "./img/clients/Derek.webp",
     },
     {
-      nombre: "Dynamic Solutions",
-      subtitulo: "Edgar Larios",
+      nombre: "QLQ esta comida",
+      subtitulo: "Fernando Andres",
       texto:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imagen: "./img/clients/EdgarLarios.webp",
-    },
-    {
-      nombre: "Aether Company",
-      subtitulo: "Norman Cook",
-      texto:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imagen: "./img/clients/Norman.webp",
+      imagen: "./img/clients/FernandoAndres.webp",
     },
     {
       nombre: "Results Staffing",
@@ -31,13 +24,6 @@ export default function Testimonials() {
       texto:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       imagen: "./img/clients/RubenFuentes.webp",
-    },
-    {
-      nombre: "QLQ esta comida",
-      subtitulo: "Fernando Andres",
-      texto:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imagen: "./img/clients/FernandoAndres.webp",
     },
     {
       nombre: "Dynamic Funding",

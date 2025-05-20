@@ -16,7 +16,7 @@ const serviceContent = {
       "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
     buttonText: "Button",
     buttonText2: "Button",
-    rating: "+000",
+    rating: "+32 Projects completed",
   },
   obliqueProjects: {
     projects: [
@@ -157,7 +157,7 @@ const serviceContent = {
     description:
       "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
     buttonText: "Call to action",
-    rating: "+000",
+    rating: "+32 Projects completed",
   },
 };
 
