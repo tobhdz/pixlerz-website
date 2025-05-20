@@ -21,7 +21,7 @@ const serviceContent = {
   obliqueProjects: {
     projects: [
       {
-        imagen: "./img/logos/QLQEstaComida3-branding.webp",
+        imagen: "./img/logos/QLQEstaComida3-logo.webp",
       },
       {
         imagen: "./img/logos/SupremeElectricSolutions-logo.webp",
@@ -31,6 +31,15 @@ const serviceContent = {
       },
       {
         imagen: "./img/logos/TheSystemEffects-logo.webp",
+      },
+      {
+        imagen: "./img/logos/LaFabrica1-logo.webp",
+      },
+      {
+        imagen: "./img/logos/LaFabrica2-logo.webp",
+      },
+      {
+        imagen: "./img/logos/LaFabrica3-logo.webp",
       },
     ],
   },

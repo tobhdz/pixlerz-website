@@ -32,6 +32,12 @@ const serviceContent = {
       {
         imagen: "./img/websites/WeEndeavor-web.webp",
       },
+      {
+        imagen: "./img/websites/AetherCapital-web.webp",
+      },
+      {
+        imagen: "./img/websites/QLQEstaComida-web.webp",
+      },
     ],
   },
   problem: {
