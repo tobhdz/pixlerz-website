@@ -5,6 +5,7 @@
   align-items: center;
   padding-block: 40px 60px;
   width: 100%;
+  gap: 40px;
 }
 
 .footer-logo-box {
@@ -12,7 +13,6 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 50px;
 }
 
 .footer-logo {
@@ -32,18 +32,11 @@
   color: #ff2e7a;
 }
 
-.footer-top-buttons {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 30px;
-}
-
 .footer-services {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
   justify-content: center;
-  margin-bottom: 22px;
 }
 
 .footer-btn {
@@ -69,7 +62,6 @@
 .footer-copyright {
   color: #bdbdbd;
   font-size: 0.95rem;
-  margin-top: 10px;
   text-align: center;
 }
 

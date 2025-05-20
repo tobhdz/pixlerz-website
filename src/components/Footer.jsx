@@ -21,14 +21,6 @@ export default function Footer() {
           className="footer-logo"
         />
       </div>
-      <div className="footer-top-buttons">
-        <Link to="/form" className="footer-btn">
-          Let's Talk
-        </Link>
-        <button className="footer-btn">
-          Send an E-Mail
-          </button>
-      </div>
       <div className="footer-services">
         <Link to="/webdevelopment" className="footer-btn">
           <FontAwesomeIcon icon={faLaptopCode} /> Web Development
@@ -41,6 +33,9 @@ export default function Footer() {
         </Link>
         <Link to="/branding" className="footer-btn">
           <FontAwesomeIcon icon={faBullhorn} /> Branding
+        </Link>
+        <Link to="/form" className="footer-btn">
+          <FontAwesomeIcon icon={faBullhorn} /> Let's Talk
         </Link>
       </div>
       <div className="footer-copyright">
