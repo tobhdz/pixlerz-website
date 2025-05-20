@@ -1,17 +1,5 @@
 import React from "react";
 import "./Solution.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelopeOpenText,
-  faBolt,
-  faThumbsUp,
-} from "@fortawesome/free-solid-svg-icons";
-
-const iconMap = {
-  faEnvelopeOpenText,
-  faBolt,
-  faThumbsUp,
-};
 
 export default function Solution({ title, description, items }) {
   return (
@@ -21,16 +9,33 @@ export default function Solution({ title, description, items }) {
         <p className="solution-desc">{description}</p>
 
         <div className="solution-items">
-          {items.map((item, index) => (
-            <div key={index} className="solution-item">
-              <FontAwesomeIcon
-                icon={iconMap[item.icon]}
-                className="solution-icon"
-              />
-              <h4>{item.title}</h4>
-              <p className="solution-item-desc">{item.description}</p>
-            </div>
-          ))}
+          <div className="solution-item">
+            <img
+              src="img/solution/solution-1.webp"
+              alt="Solution 1"
+              className="solution-icon"
+            />
+            <h4>{items[0].title}</h4>
+            <p className="solution-item-desc">{items[0].description}</p>
+          </div>
+          <div className="solution-item">
+            <img
+              src="img/solution/solution-2.webp"
+              alt="Solution 2"
+              className="solution-icon"
+            />
+            <h4>{items[1].title}</h4>
+            <p className="solution-item-desc">{items[1].description}</p>
+          </div>
+          <div className="solution-item">
+            <img
+              src="img/solution/solution-3.webp"
+              alt="Solution 3"
+              className="solution-icon"
+            />
+            <h4>{items[2].title}</h4>
+            <p className="solution-item-desc">{items[2].description}</p>
+          </div>
         </div>
       </div>
     </div>
