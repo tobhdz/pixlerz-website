@@ -46,23 +46,23 @@
 }
 
 .discs div:nth-child(1) {
-    background-image: url(../../public/img/clients/Derek.webp);
+    background-image: url(/img/clients/Derek.webp);
 }
 
 .discs div:nth-child(2) {
-    background-image: url(../../public/img/clients/FernandoAndres.webp);
+    background-image: url(/img/clients/FernandoAndres.webp);
 }
 
 .discs div:nth-child(3) {
-    background-image: url(../../public/img/clients/RubenFuentes.webp);
+    background-image: url(/img/clients/RubenFuentes.webp);
 }
 
 .discs div:nth-child(4) {
-    background-image: url(../../public/img/clients/David.webp);
+    background-image: url(/img/clients/David.webp);
 }
 
 .discs div:nth-child(5) {
-    background-image: url(../../public/img/clients/NormaDevine.webp);
+    background-image: url(/img/clients/NormaDevine.webp);
 }
 
 .puntuation {

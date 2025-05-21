@@ -82,7 +82,7 @@ export default function Services() {
         </Link>
       </AnimatedSection>
       <AnimatedSection animation="scale-in">
-        <Link to="/social-media" className="service">
+        <Link to="/socialmedia" className="service">
           <div className="image">
             <VideoComponent src="./img/socialmedia.mp4" alt="Social Media" />
           </div>
