@@ -56,11 +56,7 @@ export default function Services() {
       <AnimatedSection animation="scale-in">
         <Link to="/webdevelopment" className="service">
           <div className="image">
-            <img
-              src="./img/development.png"
-              alt="Web Development"
-              loading="lazy"
-            />
+            <img src="./img/development.png" alt="Web Development" />
           </div>
           <div className="service-details">
             <h3>Web Development</h3>
@@ -96,7 +92,7 @@ export default function Services() {
       <AnimatedSection animation="scale-in">
         <Link to="/branding" className="service">
           <div className="image">
-            <img src="./img/branding.png" alt="Branding" loading="lazy" />
+            <img src="./img/branding.png" alt="Branding" />
           </div>
           <div className="service-details">
             <h3>Branding</h3>

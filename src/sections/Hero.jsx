@@ -43,7 +43,6 @@ export default function Hero() {
         preload="metadata"
         disablePictureInPicture
         disableRemotePlayback
-        loading="lazy"
         src="./img/headervideo.mp4"
       />
       <img

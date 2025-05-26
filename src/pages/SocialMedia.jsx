@@ -154,7 +154,6 @@ export default function Service() {
         preload="metadata"
         disablePictureInPicture
         disableRemotePlayback
-        loading="lazy"
         className="curvesvideo-service-page"
         src="./img/curves.mp4"
       />
