@@ -8,6 +8,7 @@ import Benefits from "../sections/Benefits.jsx";
 import FAQs from "../sections/FAQs.jsx";
 import ActionCard from "../sections/ActionCard.jsx";
 import AnimatedSection from "../components/AnimatedSection.jsx";
+import CurvesVideo from "../components/CurvesVideo";
 
 const serviceContent = {
   serviceHead: {
@@ -155,17 +156,7 @@ export default function Service() {
       <AnimatedSection animation="scale-in" zIndex={7}>
         <ServiceHead {...serviceContent.serviceHead} />
       </AnimatedSection>
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        disablePictureInPicture
-        disableRemotePlayback
-        className="curvesvideo-service-page"
-        src="./img/curves.mp4"
-      />
+      <CurvesVideo />
       <AnimatedSection animation="fade-in-up">
         <div className="projects-container web-slider">
           <ObliqueProjects {...serviceContent.obliqueProjects} />

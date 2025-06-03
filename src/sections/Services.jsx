@@ -1,18 +1,19 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Services.css";
 import AnimatedSection from "../components/AnimatedSection.jsx";
 
 const VideoComponent = ({ src, alt }) => {
   const videoRef = useRef(null);
+  const [useFallback, setUseFallback] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && videoRef.current) {
+          if (entry.isIntersecting && videoRef.current && !useFallback) {
             videoRef.current.play().catch(() => {
-              // Manejo silencioso de errores de reproducción automática
+              setUseFallback(true);
             });
           }
         });
@@ -31,7 +32,12 @@ const VideoComponent = ({ src, alt }) => {
         observer.unobserve(videoRef.current);
       }
     };
-  }, []);
+  }, [useFallback]);
+
+  if (useFallback) {
+    const gifSrc = src.replace(".mp4", ".gif");
+    return <img src={gifSrc} alt={alt} loading="lazy" />;
+  }
 
   return (
     <video
