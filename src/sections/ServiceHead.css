@@ -146,9 +146,18 @@
 }
 
 @media (max-width: 900px) {
+
+    .servicehead {
+        #logodesign & {
+            max-width: 300px
+        }
+    }
+
     .servicehead-content {
         h3 {
             font-size: 36px;
+            line-height: auto!important;
+            margin-bottom: 0!important;
         }
         .instrument-italic {
             font-size: 48px;

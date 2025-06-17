@@ -144,3 +144,9 @@
         width: 0%;
     }
 }
+
+@media (max-width: 700px) {
+    .puntuation p {
+        width: 90px;
+    }
+}
