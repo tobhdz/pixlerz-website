@@ -15,7 +15,7 @@ const serviceContent = {
     title: "Websites built *right*",
     description:
       "Your website isn't just a page , it's your brand's first handshake. We build digital homes that feel like you — the kind where people take off their coat and stay awhile.",
-    rating: "+32 Projects completed",
+    rating: "200+ Projects completed",
   },
   obliqueProjects: {
     projects: [
@@ -47,7 +47,7 @@ const serviceContent = {
         "Slow load times that make people bounce",
         "Cheap templates that all look the same",
         "Clunky mobile experience that breaks everything",
-        "Sites that “look nice” but don’t actually work",
+        'Sites that "look nice" but dont actually work',
       ],
     },
     solution: {
@@ -77,7 +77,7 @@ const serviceContent = {
       {
         title: "Built To Convert",
         description:
-          "Your site isn’t here to look pretty — it’s here to turn visitors into customers",
+          "Your site isn't here to look pretty — it's here to turn visitors into customers",
       },
     ],
   },
@@ -87,33 +87,27 @@ const serviceContent = {
     items: [
       {
         title: "🌟 Custom Everything",
-        description:
-          "Built fully from scratch — no templates, no shortcuts.",
+        description: "Built fully from scratch — no templates, no shortcuts.",
       },
       {
         title: "🚀 Speed That Slaps",
-        description:
-          "Fast load times that keep people on your site.",
+        description: "Fast load times that keep people on your site.",
       },
       {
         title: "🎯 Conversion Focused",
-        description:
-          "Designed to guide visitors exactly where you want them.",
+        description: "Designed to guide visitors exactly where you want them.",
       },
       {
         title: "📱 Mobile Perfect",
-        description:
-          "Smooth, responsive design across every screen size.",
+        description: "Smooth, responsive design across every screen size.",
       },
       {
         title: "⚡ Fully Optimized Build",
-        description:
-          "Clean code, smart structure, zero bloat.",
+        description: "Clean code, smart structure, zero bloat.",
       },
       {
         title: "🔒 Locked & Secure",
-        description:
-          "Built stable. Built safe. Built to last.",
+        description: "Built stable. Built safe. Built to last.",
       },
     ],
   },
@@ -136,13 +130,6 @@ const serviceContent = {
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
       },
     ],
-  },
-  actionCard: {
-    title: "Lorem ipsum dolor sit amet",
-    description:
-      "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
-    buttonText: "Call to action",
-    rating: "+32 Projects completed",
   },
 };
 
@@ -171,7 +158,7 @@ export default function Service() {
         <FAQs {...serviceContent.faqs} />
       </AnimatedSection>
       <AnimatedSection animation="fade-in-right">
-        <ActionCard {...serviceContent.actionCard} />
+        <ActionCard />
       </AnimatedSection>
     </div>
   );

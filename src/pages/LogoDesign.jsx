@@ -14,8 +14,8 @@ const serviceContent = {
   serviceHead: {
     title: "Logos that you can be *proud* of",
     description:
-      "Your logo isn’t a decoration — it’s the face of your brand. We make sure yours actually says something.",
-    rating: "+32 Projects completed",
+      "Your logo isn't a decoration — it's the face of your brand. We make sure yours actually says something.",
+    rating: "200+ Projects completed",
   },
   obliqueProjects: {
     projects: [
@@ -48,7 +48,7 @@ const serviceContent = {
       title: "Your frustration",
       items: [
         "Generic designs that look like clipart",
-        "Logos that don’t work across platforms",
+        "Logos that don't work across platforms",
         "Designs that feel trendy for 6 months, then outdated",
         "Endless revisions because no one knows what you want",
       ],
@@ -68,8 +68,7 @@ const serviceContent = {
     items: [
       {
         title: "Original Concepts",
-        description:
-          "Built from scratch, designed for your identity.",
+        description: "Built from scratch, designed for your identity.",
       },
       {
         title: "Built to Scale",
@@ -78,8 +77,7 @@ const serviceContent = {
       },
       {
         title: "Timeless Design",
-        description:
-          "Not trendy. Not dated. Built to age well.",
+        description: "Not trendy. Not dated. Built to age well.",
       },
     ],
   },
@@ -89,18 +87,15 @@ const serviceContent = {
     items: [
       {
         title: "🌟 Custom Design",
-        description:
-          "Every pixel built specifically for you.",
+        description: "Every pixel built specifically for you.",
       },
       {
         title: "🚀 High Versatility",
-        description:
-          "Your logo works across every platform and format.",
+        description: "Your logo works across every platform and format.",
       },
       {
         title: "🎯 Instant Recognition",
-        description:
-          "We design logos people remember after they scroll.",
+        description: "We design logos people remember after they scroll.",
       },
       {
         title: "📱 Perfect For Digital & Print",
@@ -109,13 +104,11 @@ const serviceContent = {
       },
       {
         title: "⚡ Delivered in Every Format You Need",
-        description:
-          "Full brand files, ready for whatever you need next.",
+        description: "Full brand files, ready for whatever you need next.",
       },
       {
         title: "🔒 Ownership Is Yours",
-        description:
-          "No weird licenses — you fully own your logo.",
+        description: "No weird licenses — you fully own your logo.",
       },
     ],
   },
@@ -138,13 +131,6 @@ const serviceContent = {
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
       },
     ],
-  },
-  actionCard: {
-    title: "Lorem ipsum dolor sit amet",
-    description:
-      "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
-    buttonText: "Call to action",
-    rating: "+32 Projects completed",
   },
 };
 
@@ -173,7 +159,7 @@ export default function Service() {
         <FAQs {...serviceContent.faqs} />
       </AnimatedSection>
       <AnimatedSection animation="fade-in-right">
-        <ActionCard {...serviceContent.actionCard} />
+        <ActionCard />
       </AnimatedSection>
     </div>
   );

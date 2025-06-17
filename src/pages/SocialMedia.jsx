@@ -14,8 +14,8 @@ const serviceContent = {
   serviceHead: {
     title: "Content that gets *noticed*",
     description:
-      "We don’t just post — we build presence. Social media isn’t about checking boxes. It’s about building attention, loyalty, and momentum. That’s what we do.",
-    rating: "+32 Projects completed",
+      "We don't just post — we build presence. Social media isn't about checking boxes. It's about building attention, loyalty, and momentum. That's what we do.",
+    rating: "200+ Projects completed",
   },
   obliqueProjects: {
     projects: [
@@ -41,7 +41,7 @@ const serviceContent = {
         "Posting random content that nobody sees",
         "Inconsistent brand voice and visuals",
         "Zero strategy, zero growth",
-        "Stuck chasing trends that don’t fit your brand",
+        "Stuck chasing trends that don't fit your brand",
       ],
     },
     solution: {
@@ -59,13 +59,11 @@ const serviceContent = {
     items: [
       {
         title: "Brand-Aligned Content",
-        description:
-          "Every post looks, sounds, and feels like your brand.",
+        description: "Every post looks, sounds, and feels like your brand.",
       },
       {
         title: "Growth-Driven Strategy",
-        description:
-          "Built to attract, engage, and build audience momentum.",
+        description: "Built to attract, engage, and build audience momentum.",
       },
       {
         title: "Platform-Perfect Execution",
@@ -95,8 +93,7 @@ const serviceContent = {
       },
       {
         title: "🎯 Audience Growth",
-        description:
-          "Content built to grow followers who actually care.",
+        description: "Content built to grow followers who actually care.",
       },
       {
         title: "📱 Platform Optimization",
@@ -135,13 +132,6 @@ const serviceContent = {
       },
     ],
   },
-  actionCard: {
-    title: "Lorem ipsum dolor sit amet",
-    description:
-      "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
-    buttonText: "Call to action",
-    rating: "+32 Projects completed",
-  },
 };
 
 export default function Service() {
@@ -169,7 +159,7 @@ export default function Service() {
         <FAQs {...serviceContent.faqs} />
       </AnimatedSection>
       <AnimatedSection animation="fade-in-right">
-        <ActionCard {...serviceContent.actionCard} />
+        <ActionCard />
       </AnimatedSection>
     </div>
   );

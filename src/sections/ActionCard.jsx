@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function ActionCard({ title, description, buttonText, rating }) {
+export default function ActionCard() {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -87,15 +87,15 @@ export default function ActionCard({ title, description, buttonText, rating }) {
               icon={faStar}
               className="animate-star-fade-in-down"
             />
-            <p>{rating}</p>
+            <p>200+ Projects completed</p>
           </div>
         </div>
         <div className="actioncard-content">
-          <h3>{title}</h3>
-          <p>{description}</p>
+          <h3>Join 200+ brands that got it right</h3>
+          <p>We don't do average. We do unforgettable.</p>
           <Link to="/form">
             <button className="actioncard-button">
-              <span>{buttonText}</span>
+              <span>Let's talk</span>
               <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </Link>

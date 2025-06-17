@@ -15,28 +15,25 @@ const landingContent = {
     items: [
       {
         question: "What do you actually do?",
-        answer: "We build badass brands. Strategy, design, websites, content, social—full-stack creative so you don’t patch together five different freelancers.",
+        answer:
+          "We build badass brands. Strategy, design, websites, content, social—full-stack creative so you don't patch together five different freelancers.",
       },
       {
         question: "Who works on my project?",
-        answer: "No interns, no apprentices. You get senior-level designers, developers, strategists—all handpicked to be the dream team your brand deserves.",
+        answer:
+          "No interns, no apprentices. You get senior-level designers, developers, strategists—all handpicked to be the dream team your brand deserves.",
       },
       {
         question: "How long will this take?",
-        answer: "Fast is for amateurs; done-right takes time. Brand identity typically takes 2–3 weeks, websites 4–8+ weeks, depending on scope and how fast you get us feedback.",
+        answer:
+          "Fast is for amateurs; done-right takes time. Brand identity typically takes 2–3 weeks, websites 4–8+ weeks, depending on scope and how fast you get us feedback.",
       },
       {
         question: "Do you offer ongoing support?",
-        answer: "Always. Launch day isn’t goodbye—it’s just the start line. We stick around so your brand doesn’t fizzle out.",
+        answer:
+          "Always. Launch day isn't goodbye—it's just the start line. We stick around so your brand doesn't fizzle out.",
       },
     ],
-  },
-  actionCard: {
-    title: "Join 200+ brands that got it right",
-    description:
-      "We don't do average. We do unforgettable.",
-    buttonText: "Let's talk",
-    rating: "+32 Projects completed",
   },
 };
 
@@ -63,7 +60,7 @@ export default function Landing() {
       </AnimatedSection>
 
       <AnimatedSection animation="fade-in-right" delay={200}>
-        <ActionCard {...landingContent.actionCard} />
+        <ActionCard />
       </AnimatedSection>
     </div>
   );

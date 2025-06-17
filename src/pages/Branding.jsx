@@ -14,8 +14,8 @@ const serviceContent = {
   serviceHead: {
     title: "We build brands that *stick*",
     description:
-      "Your brand isn’t your logo. It’s how people remember you. We build brands that actually mean something — and stay sharp for the long haul.",
-    rating: "+32 Projects completed",
+      "Your brand isn't your logo. It's how people remember you. We build brands that actually mean something — and stay sharp for the long haul.",
+    rating: "200+ Projects completed",
   },
   obliqueProjects: {
     projects: [
@@ -58,14 +58,14 @@ const serviceContent = {
       items: [
         "Generic branding that sounds like everyone else",
         "Random visuals with no consistency",
-        "“Strategy” that’s just buzzwords",
+        '"Strategy" that\'s just buzzwords',
         "Trend-chasing that ages fast",
       ],
     },
     solution: {
       items: [
         "Messaging that sounds like you",
-        "Visual identity that’s instantly recognizable",
+        "Visual identity that's instantly recognizable",
         "Strategy built around your actual business",
         "Timeless creative that holds up as you grow",
       ],
@@ -77,8 +77,7 @@ const serviceContent = {
     items: [
       {
         title: "Brand Messaging",
-        description:
-          "Clear voice, sharp positioning, words that work.",
+        description: "Clear voice, sharp positioning, words that work.",
       },
       {
         title: "Visual Identity",
@@ -103,13 +102,11 @@ const serviceContent = {
     items: [
       {
         title: "🌟 Original Identity",
-        description:
-          "No recycled visuals — your brand, fully custom.",
+        description: "No recycled visuals — your brand, fully custom.",
       },
       {
         title: "🚀 Positioning That Cuts Through Noise",
-        description:
-          "We help you own your space and say what matters.",
+        description: "We help you own your space and say what matters.",
       },
       {
         title: "🎯 Consistency Everywhere",
@@ -124,12 +121,11 @@ const serviceContent = {
       {
         title: "⚡ Timeless Creative",
         description:
-          "Designed to last longer than whatever’s trending right now.",
+          "Designed to last longer than whatever's trending right now.",
       },
       {
         title: "🔒 Full Ownership",
-        description:
-          "You own it all. No fine print. No weird licenses.",
+        description: "You own it all. No fine print. No weird licenses.",
       },
     ],
   },
@@ -152,13 +148,6 @@ const serviceContent = {
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
       },
     ],
-  },
-  actionCard: {
-    title: "Lorem ipsum dolor sit amet",
-    description:
-      "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
-    buttonText: "Call to action",
-    rating: "+32 Projects completed",
   },
 };
 
@@ -187,7 +176,7 @@ export default function Service() {
         <FAQs {...serviceContent.faqs} />
       </AnimatedSection>
       <AnimatedSection animation="fade-in-right">
-        <ActionCard {...serviceContent.actionCard} />
+        <ActionCard />
       </AnimatedSection>
     </div>
   );
