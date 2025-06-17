@@ -19,7 +19,7 @@ export default function WhyUs() {
         }
       },
       {
-        threshold: 0.5,
+        threshold: 0.2,
       }
     );
 
@@ -76,7 +76,7 @@ export default function WhyUs() {
         </div>
       </div>
       <div className="whyus-box">
-        <AnimatedSection animation="scale-in">
+        <AnimatedSection animation="scale-in-faster">
           <div className="whyus-box-content" ref={boxContentRef}>
             <h4>
               Innovating digital <br></br> experiences with Pixlerz

@@ -12,7 +12,7 @@ import CurvesVideo from "../components/CurvesVideo";
 
 const serviceContent = {
   serviceHead: {
-    title: "Content That Gets Noticed.",
+    title: "Content that gets *noticed*",
     description:
       "We don’t just post — we build presence. Social media isn’t about checking boxes. It’s about building attention, loyalty, and momentum. That’s what we do.",
     rating: "+32 Projects completed",
@@ -34,7 +34,7 @@ const serviceContent = {
     ],
   },
   problem: {
-    title: "Why Most Social Media Flops",
+    title: "Why most social media flops",
     frustration: {
       title: "Your frustration",
       items: [
@@ -54,7 +54,7 @@ const serviceContent = {
     },
   },
   solution: {
-    title: "How We Make Your Brand Show Up Online",
+    title: "How we make your brand show up online",
     description: "Not just content. Not just posts. Actual brand presence.",
     items: [
       {
@@ -80,7 +80,7 @@ const serviceContent = {
     ],
   },
   benefits: {
-    title: "What You Get With Pixlerz Social Media.",
+    title: "What you get with Pixlerz social media",
     subtitle: "Built to get seen. Built to build your brand.",
     items: [
       {
@@ -146,7 +146,7 @@ const serviceContent = {
 
 export default function Service() {
   return (
-    <div className="service-container">
+    <div className="service-container" id="socialmedia">
       <CurvesVideo />
       <AnimatedSection animation="scale-in" zIndex={7}>
         <ServiceHead {...serviceContent.serviceHead} />

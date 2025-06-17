@@ -12,7 +12,7 @@ import CurvesVideo from "../components/CurvesVideo";
 
 const serviceContent = {
   serviceHead: {
-    title: "Logos that you can be proud of",
+    title: "Logos that you can be *proud* of",
     description:
       "Your logo isn’t a decoration — it’s the face of your brand. We make sure yours actually says something.",
     rating: "+32 Projects completed",
@@ -43,7 +43,7 @@ const serviceContent = {
     ],
   },
   problem: {
-    title: "Why Logos can suck",
+    title: "Why logos can suck",
     frustration: {
       title: "Your frustration",
       items: [
@@ -63,7 +63,7 @@ const serviceContent = {
     },
   },
   solution: {
-    title: "How We Build Logos That Last",
+    title: "How we build logos that last",
     description: "",
     items: [
       {
@@ -84,7 +84,7 @@ const serviceContent = {
     ],
   },
   benefits: {
-    title: "What You Get With A Pixlerz Logo",
+    title: "What you get with a Pixlerz logo",
     subtitle: "Clean. Custom. Timeless.",
     items: [
       {
@@ -150,7 +150,7 @@ const serviceContent = {
 
 export default function Service() {
   return (
-    <div className="service-container">
+    <div className="service-container" id="logodesign">
       <CurvesVideo />
       <AnimatedSection animation="scale-in" zIndex={7}>
         <ServiceHead {...serviceContent.serviceHead} />

@@ -16,14 +16,17 @@
     border: 1px solid rgb(110, 119, 160);
     border-radius: 60px;
     padding: 30px;
-    padding-bottom: 50px;
+    padding-block: 40px 50px;
 }
 
 .solution h3 {
     font-size: 48px;
     margin-bottom: 10px;
     text-align: center;
-    font-weight: 600
+    font-weight: 600;
+    #branding &, #socialmedia & {
+        font-size: 40px
+    }
 }
 
 .solution-desc {

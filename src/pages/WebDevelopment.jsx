@@ -40,7 +40,7 @@ const serviceContent = {
     ],
   },
   problem: {
-    title: "Websites That Don't Embarrass You",
+    title: "Websites that don't embarrass you",
     frustration: {
       title: "Your frustration",
       items: [

@@ -16,6 +16,14 @@
     gap: 30px;
     border-radius: 10px;
     box-sizing: border-box;
+
+    #logodesign & {
+        max-width: 700px;
+        h3 {
+            line-height: 50px;
+            margin-bottom: 20px
+        }
+    }
 }
 
 .servicehead-top {
@@ -80,7 +88,7 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    text-shadow: 1px 1px #03070d9a;
+    text-shadow: 1px 1px #03070d9a, 0 0 10px #293a6f93;
 
     h3 {
         font-size: 54px;
