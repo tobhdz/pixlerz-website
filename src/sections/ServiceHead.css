@@ -166,6 +166,9 @@
             padding: 0;
             font-size: 18px;
             text-align: center;
+            &::before {
+                font-size: 14px;
+            }
         }
     }
 
@@ -179,4 +182,15 @@
     .servicehead-button2:hover {
         transform: translateY(-0px)
     }
+}
+
+/* Specific tweaks for copywriting */
+
+#branding .servicehead-content p::before {
+    content:"Not trendy. Not forgettable. Built to last.";
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    word-break: keep-all;
+    color: white
 }

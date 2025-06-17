@@ -60,7 +60,7 @@ export default function Services() {
   return (
     <div className="services-container">
       <AnimatedSection animation="scale-in">
-        <Link to="/webdevelopment" className="service">
+        <Link to="/webdevelopment" className="service first">
           <div className="image">
             <img src="./img/development.png" alt="Web Development" />
           </div>
@@ -82,7 +82,7 @@ export default function Services() {
         </Link>
       </AnimatedSection>
       <AnimatedSection animation="scale-in">
-        <Link to="/socialmedia" className="service">
+        <Link to="/socialmedia" className="service 2">
           <div className="image">
             <VideoComponent src="./img/socialmedia.mp4" alt="Social Media" />
           </div>
@@ -93,7 +93,7 @@ export default function Services() {
         </Link>
       </AnimatedSection>
       <AnimatedSection animation="scale-in">
-        <Link to="/branding" className="service">
+        <Link to="/branding" className="service last">
           <div className="image">
             <img src="./img/branding.png" alt="Branding" />
           </div>

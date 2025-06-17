@@ -34,7 +34,7 @@ const serviceContent = {
     ],
   },
   problem: {
-    title: "Why most social media flops",
+    title: "While most social media flops, ours doesn't",
     frustration: {
       title: "Your frustration",
       items: [

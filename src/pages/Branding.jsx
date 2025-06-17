@@ -52,7 +52,7 @@ const serviceContent = {
     ],
   },
   problem: {
-    title: "Why most brands fade",
+    title: "While most brands fade, ours don't",
     frustration: {
       title: "Your frustration",
       items: [

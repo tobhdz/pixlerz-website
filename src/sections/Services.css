@@ -114,7 +114,7 @@
     background: linear-gradient(180deg, #000a1d, #4b78b5, #000a1d);
 }
 
-.services-container .service:first-child, .services-container .service:last-child {
+.services-container .service.first, .services-container .service.last {
     background: linear-gradient(to right, #000a1d, #4b78b5, #000a1d);
 }
 
