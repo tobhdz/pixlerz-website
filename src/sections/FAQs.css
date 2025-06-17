@@ -32,6 +32,7 @@
     cursor: pointer;
     filter: saturate(1.2) hue-rotate(-10deg);
     transition: 0.3s;
+    font-size: 18px;
 
     &:hover {
         filter: saturate(1.2) hue-rotate(-10deg) brightness(1.2);

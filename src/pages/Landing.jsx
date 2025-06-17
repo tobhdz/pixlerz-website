@@ -14,27 +14,28 @@ const landingContent = {
     title: "FAQs",
     items: [
       {
-        question: "Lorem ipsum dolor sit amet consectetur?",
-        answer:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        question: "What do you actually do?",
+        answer: "We build badass brands. Strategy, design, websites, content, social—full-stack creative so you don’t patch together five different freelancers.",
       },
       {
-        question: "Consectetur adipiscing elit sed do?",
-        answer:
-          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        question: "Who works on my project?",
+        answer: "No interns, no apprentices. You get senior-level designers, developers, strategists—all handpicked to be the dream team your brand deserves.",
       },
       {
-        question: "Ut enim ad minim veniam quis nostrud?",
-        answer:
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        question: "How long will this take?",
+        answer: "Fast is for amateurs; done-right takes time. Brand identity typically takes 2–3 weeks, websites 4–8+ weeks, depending on scope and how fast you get us feedback.",
+      },
+      {
+        question: "Do you offer ongoing support?",
+        answer: "Always. Launch day isn’t goodbye—it’s just the start line. We stick around so your brand doesn’t fizzle out.",
       },
     ],
   },
   actionCard: {
-    title: "Lorem ipsum dolor sit amet",
+    title: "Join 200+ brands that got it right",
     description:
-      "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
-    buttonText: "Call to action",
+      "We don't do average. We do unforgettable.",
+    buttonText: "Let's talk",
     rating: "+32 Projects completed",
   },
 };

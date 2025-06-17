@@ -3,6 +3,7 @@
     width: 100%;
     height: 100vh;
     z-index: 1;
+    min-height: 730px;
 }
 
 .formpage-container div {
@@ -14,5 +15,11 @@
 @media (max-width: 1200px) {
     .formpage-container div {
         padding-top: 50px
+    }
+}
+
+@media (max-width: 7000px) {
+    .formpage-container {
+        min-height: none;
     }
 }

@@ -12,11 +12,9 @@ import CurvesVideo from "../components/CurvesVideo";
 
 const serviceContent = {
   serviceHead: {
-    title: "Socials *ipsum* dolor sit amet💙",
+    title: "Content That Gets Noticed.",
     description:
-      "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
-    buttonText: "Button",
-    buttonText2: "Button",
+      "We don’t just post — we build presence. Social media isn’t about checking boxes. It’s about building attention, loyalty, and momentum. That’s what we do.",
     rating: "+32 Projects completed",
   },
   obliqueProjects: {
@@ -36,82 +34,84 @@ const serviceContent = {
     ],
   },
   problem: {
-    title: "Problem title",
+    title: "Why Most Social Media Flops",
     frustration: {
       title: "Your frustration",
       items: [
-        "Lorem ipsum dolor sit amet",
-        "Consectetur adipiscing elit",
-        "Sed do eiusmod tempor incididunt",
-        "Ut labore et dolore magna aliqua",
+        "Posting random content that nobody sees",
+        "Inconsistent brand voice and visuals",
+        "Zero strategy, zero growth",
+        "Stuck chasing trends that don’t fit your brand",
       ],
     },
     solution: {
       items: [
-        "Ut enim ad minim veniam",
-        "Quis nostrud exercitation",
-        "Ullamco laboris nisi ut aliquip",
-        "Ex ea commodo consequat",
+        "Content built to match your brand voice & style",
+        "Consistent, professional visual identity across platforms",
+        "Clear strategy tied to actual business goals",
+        "Social that grows your audience — not just fills your feed",
       ],
     },
   },
   solution: {
-    title: "Solution title",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: "How We Make Your Brand Show Up Online",
+    description: "Not just content. Not just posts. Actual brand presence.",
     items: [
       {
-        icon: "faEnvelopeOpenText",
-        title: "Lorem Ipsum",
+        title: "Brand-Aligned Content",
         description:
-          "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+          "Every post looks, sounds, and feels like your brand.",
       },
       {
-        icon: "faBolt",
-        title: "Dolor Sit",
+        title: "Growth-Driven Strategy",
         description:
-          "Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+          "Built to attract, engage, and build audience momentum.",
       },
       {
-        icon: "faThumbsUp",
-        title: "Amet Consectetur",
+        title: "Platform-Perfect Execution",
         description:
-          "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          "Content optimized for where your audience actually lives.",
+      },
+      {
+        title: "Scroll-Stopping Design",
+        description:
+          "Creative that makes people stop mid-scroll and pay attention.",
       },
     ],
   },
   benefits: {
-    title: "Benefits title",
-    subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: "What You Get With Pixlerz Social Media.",
+    subtitle: "Built to get seen. Built to build your brand.",
     items: [
       {
-        title: "🌟 Lorem Ipsum",
+        title: "🌟 Custom Content",
         description:
-          "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+          "Original graphics, video, reels, carousels — fully designed for your brand.",
       },
       {
-        title: "🚀 Dolor Sit",
+        title: "🚀 Consistency",
         description:
-          "Ut enim ad minim veniam quis nostrud exercitation ullamco",
+          "Your brand shows up sharp, polished, and on point every time.",
       },
       {
-        title: "🌈 Amet Consectetur",
+        title: "🎯 Audience Growth",
         description:
-          "Duis aute irure dolor in reprehenderit in voluptate velit",
+          "Content built to grow followers who actually care.",
       },
       {
-        title: "🎉 Adipisicing Elit",
+        title: "📱 Platform Optimization",
         description:
-          "Excepteur sint occaecat cupidatat non proident sunt in culpa",
+          "Tailored for Instagram, TikTok, LinkedIn, YouTube & more.",
       },
       {
-        title: "🚫 Tempor Incididunt",
+        title: "⚡ Engagement Boosters",
         description:
-          "Qui officia deserunt mollit anim id est laborum consectetur",
+          "Designed to drive likes, shares, comments, and conversations.",
       },
       {
-        title: "🌱 Magna Aliqua",
+        title: "🔒 Done-For-You Execution",
         description:
-          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut",
+          "You focus on your business — we handle the content machine.",
       },
     ],
   },

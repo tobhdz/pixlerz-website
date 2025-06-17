@@ -45,35 +45,33 @@ export default function WhyUs() {
       <div className="whyus-cards">
         <div className="whyus-card">
           <div className="icon icon-1">
-            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faEye} />
           </div>
-          <h5>Pixlerz Expertise</h5>
+          <h5>Design That Demands Attention</h5>
           <p>
-            Backed by a proven track record, Pixlerz delivers cutting-edge
-            development and development solutions tailored to elevate your
-            brand. Our team combines creativity and technical expertise to
-            create websites that stand out and convert.
+            You’ve got about 1.7 seconds to make someone care. We make sure your
+            brand takes every one of those seconds and smacks people right in
+            the face (creatively speaking).
           </p>
         </div>
         <div className="whyus-card">
           <div className="icon icon-2">
-            <FontAwesomeIcon icon={faEye} />
+            <FontAwesomeIcon icon={faStar} />
           </div>
-          <h5>Engaging, Powerful Websites</h5>
+          <h5>Built for Legacy, Not Just Launches</h5>
           <p>
-            We development websites that captivate your audience, keep them
-            engaged, and drive meaningful interactions with your brand.
+            One-hit-wonders are cute. We’re here for the long game; building
+            brands that keep working, growing, and turning heads years from now.
           </p>
         </div>
         <div className="whyus-card">
           <div className="icon icon-3">
             <FontAwesomeIcon icon={faMagicWandSparkles} />
           </div>
-          <h5>Custom-Tailored Solutions:</h5>
+          <h5>Full-Service Creative, Zero Generic BS</h5>
           <p>
-            Every project is unique. We craft websites specifically tailored to
-            your business needs and goals, ensuring a perfect fit for your
-            vision.
+            Web. Brand. Content. Strategy. We bring the full package — because
+            your brand deserves better than recycled templates and safe ideas.
           </p>
         </div>
       </div>
@@ -89,45 +87,39 @@ export default function WhyUs() {
             </p>
             <div className="whyus-box-sub">
               <div className="whyus-box-sub-item">
-                <h5>📈 Comprehensive Strategy Development</h5>
+                <h5>🔧 Strategy That Doesn’t Suck</h5>
                 <p>
-                  We develop a holistic approach to align your online presence
-                  with your business goals.
+                  Random doesn’t scale. We build clear, aggressive strategies that make sure your brand moves forward with purpose — not by accident.
                 </p>
               </div>
               <div className="whyus-box-sub-item">
-                <h5>🔗 Scalable Solutions</h5>
+                <h5>🚀 Built to Scale, Not Stall</h5>
                 <p>
-                  Our websites are developmented to evolve with your business,
-                  ensuring seamless growth and adaptability.
+                  Your business grows? Your brand keeps up. Everything we build is designed to flex, evolve, and keep performing while you level up.
                 </p>
               </div>
               <div className="whyus-box-sub-item">
-                <h5>👨‍💻 Expert Team</h5>
+                <h5>🧠 No B-Team Here</h5>
                 <p>
-                  Work with carefully selected professionals who bring
-                  specialized expertise to every project.
+                  You get real pros. No interns running your brand. No half-baked “creative ideas.” Just people who know how to make your business look like it belongs on the big stage.
                 </p>
               </div>
               <div className="whyus-box-sub-item">
-                <h5>🎨 Creative Excellence</h5>
+                <h5>🎨 Creative That Punches Through</h5>
                 <p>
-                  Bold and innovative ideas tailored to elevate your brand's
-                  digital presence.
+                  We don’t do “safe.” We deliver bold, original creative that makes your brand impossible to ignore.
                 </p>
               </div>
               <div className="whyus-box-sub-item">
-                <h5>🔍 Strategic Customization</h5>
+                <h5>🎯 Custom Everything</h5>
                 <p>
-                  Fully customized campaigns and strategies that align with your
-                  business objectives.
+                  Your brand isn’t generic. Neither is our work. Every campaign, website, and strategy is built around your goals, your audience, your future.
                 </p>
               </div>
               <div className="whyus-box-sub-item">
-                <h5>🤝 Reliable Partnership</h5>
+                <h5>🤝 Partners, Not Vendors</h5>
                 <p>
-                  A dependable team that values transparency, collaboration, and
-                  long-term relationships.
+                  We’re in it with you. Transparent, collaborative, and locked-in on the long game. No fluff, no ghosting, no disappearing after launch.
                 </p>
               </div>
             </div>

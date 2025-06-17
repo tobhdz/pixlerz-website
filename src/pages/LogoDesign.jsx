@@ -12,11 +12,9 @@ import CurvesVideo from "../components/CurvesVideo";
 
 const serviceContent = {
   serviceHead: {
-    title: "Logos *ipsum* dolor sit amet💙",
+    title: "Logos that you can be proud of",
     description:
-      "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
-    buttonText: "Button",
-    buttonText2: "Button",
+      "Your logo isn’t a decoration — it’s the face of your brand. We make sure yours actually says something.",
     rating: "+32 Projects completed",
   },
   obliqueProjects: {
@@ -45,82 +43,79 @@ const serviceContent = {
     ],
   },
   problem: {
-    title: "Problem title",
+    title: "Why Logos can suck",
     frustration: {
       title: "Your frustration",
       items: [
-        "Lorem ipsum dolor sit amet",
-        "Consectetur adipiscing elit",
-        "Sed do eiusmod tempor incididunt",
-        "Ut labore et dolore magna aliqua",
+        "Generic designs that look like clipart",
+        "Logos that don’t work across platforms",
+        "Designs that feel trendy for 6 months, then outdated",
+        "Endless revisions because no one knows what you want",
       ],
     },
     solution: {
       items: [
-        "Ut enim ad minim veniam",
-        "Quis nostrud exercitation",
-        "Ullamco laboris nisi ut aliquip",
-        "Ex ea commodo consequat",
+        "Custom, fully original designs",
+        "Built to work on web, print, merch — everywhere",
+        "Timeless design that ages with your brand",
+        "We listen → we design → you get exactly what you need",
       ],
     },
   },
   solution: {
-    title: "Solution title",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: "How We Build Logos That Last",
+    description: "",
     items: [
       {
-        icon: "faEnvelopeOpenText",
-        title: "Lorem Ipsum",
+        title: "Original Concepts",
         description:
-          "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+          "Built from scratch, designed for your identity.",
       },
       {
-        icon: "faBolt",
-        title: "Dolor Sit",
+        title: "Built to Scale",
         description:
-          "Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+          "Works perfectly at every size, from business cards to billboards.",
       },
       {
-        icon: "faThumbsUp",
-        title: "Amet Consectetur",
+        title: "Timeless Design",
         description:
-          "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          "Not trendy. Not dated. Built to age well.",
       },
     ],
   },
   benefits: {
-    title: "Benefits title",
-    subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: "What You Get With A Pixlerz Logo",
+    subtitle: "Clean. Custom. Timeless.",
     items: [
       {
-        title: "🌟 Lorem Ipsum",
+        title: "🌟 Custom Design",
         description:
-          "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+          "Every pixel built specifically for you.",
       },
       {
-        title: "🚀 Dolor Sit",
+        title: "🚀 High Versatility",
         description:
-          "Ut enim ad minim veniam quis nostrud exercitation ullamco",
+          "Your logo works across every platform and format.",
       },
       {
-        title: "🌈 Amet Consectetur",
+        title: "🎯 Instant Recognition",
         description:
-          "Duis aute irure dolor in reprehenderit in voluptate velit",
+          "We design logos people remember after they scroll.",
       },
       {
-        title: "🎉 Adipisicing Elit",
+        title: "📱 Perfect For Digital & Print",
         description:
-          "Excepteur sint occaecat cupidatat non proident sunt in culpa",
+          "Looks clean online, offline, and everywhere your brand lives.",
       },
       {
-        title: "🚫 Tempor Incididunt",
+        title: "⚡ Delivered in Every Format You Need",
         description:
-          "Qui officia deserunt mollit anim id est laborum consectetur",
+          "Full brand files, ready for whatever you need next.",
       },
       {
-        title: "🌱 Magna Aliqua",
+        title: "🔒 Ownership Is Yours",
         description:
-          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut",
+          "No weird licenses — you fully own your logo.",
       },
     ],
   },

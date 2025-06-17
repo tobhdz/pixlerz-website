@@ -12,11 +12,9 @@ import CurvesVideo from "../components/CurvesVideo";
 
 const serviceContent = {
   serviceHead: {
-    title: "Branding *ipsum* dolor sit amet💙",
+    title: "We Build Brands That Stick",
     description:
-      "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
-    buttonText: "Button",
-    buttonText2: "Button",
+      "Your brand isn’t your logo. It’s how people remember you. We build brands that actually mean something — and stay sharp for the long haul.",
     rating: "+32 Projects completed",
   },
   obliqueProjects: {
@@ -54,82 +52,84 @@ const serviceContent = {
     ],
   },
   problem: {
-    title: "Problem title",
+    title: "Why Most Brands Fade",
     frustration: {
       title: "Your frustration",
       items: [
-        "Lorem ipsum dolor sit amet",
-        "Consectetur adipiscing elit",
-        "Sed do eiusmod tempor incididunt",
-        "Ut labore et dolore magna aliqua",
+        "Generic branding that sounds like everyone else",
+        "Random visuals with no consistency",
+        "“Strategy” that’s just buzzwords",
+        "Trend-chasing that ages fast",
       ],
     },
     solution: {
       items: [
-        "Ut enim ad minim veniam",
-        "Quis nostrud exercitation",
-        "Ullamco laboris nisi ut aliquip",
-        "Ex ea commodo consequat",
+        "Messaging that sounds like you",
+        "Visual identity that’s instantly recognizable",
+        "Strategy built around your actual business",
+        "Timeless creative that holds up as you grow",
       ],
     },
   },
   solution: {
-    title: "Solution title",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: "How We Build Brands That Actually Last",
+    description: "Real brand work — not trendy templates.",
     items: [
       {
-        icon: "faEnvelopeOpenText",
-        title: "Lorem Ipsum",
+        title: "Brand Messaging",
         description:
-          "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+          "Clear voice, sharp positioning, words that work.",
       },
       {
-        icon: "faBolt",
-        title: "Dolor Sit",
+        title: "Visual Identity",
         description:
-          "Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+          "Logo, colors, typography — built for long-term use across every touchpoint.",
       },
       {
-        icon: "faThumbsUp",
-        title: "Amet Consectetur",
+        title: "Brand Strategy",
         description:
-          "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          "Aligned to your goals, your audience, and your business model.",
+      },
+      {
+        title: "Full Brand Systems",
+        description:
+          "Guidelines, templates, and assets so your entire team stays on-brand.",
       },
     ],
   },
   benefits: {
-    title: "Benefits title",
-    subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: "What You Get With Pixlerz Branding.",
+    subtitle: "Custom. Cohesive. Built for real growth.",
     items: [
       {
-        title: "🌟 Lorem Ipsum",
+        title: "🌟 Original Identity",
         description:
-          "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+          "No recycled visuals — your brand, fully custom.",
       },
       {
-        title: "🚀 Dolor Sit",
+        title: "🚀 Positioning That Cuts Through Noise",
         description:
-          "Ut enim ad minim veniam quis nostrud exercitation ullamco",
+          "We help you own your space and say what matters.",
       },
       {
-        title: "🌈 Amet Consectetur",
+        title: "🎯 Consistency Everywhere",
         description:
-          "Duis aute irure dolor in reprehenderit in voluptate velit",
+          "Your brand shows up sharp across web, social, print, video, and beyond.",
       },
       {
-        title: "🎉 Adipisicing Elit",
+        title: "📱 Scalable Assets",
         description:
-          "Excepteur sint occaecat cupidatat non proident sunt in culpa",
+          "Brand guidelines and assets ready for whatever you build next.",
       },
       {
-        title: "🚫 Tempor Incididunt",
+        title: "⚡ Timeless Creative",
         description:
-          "Qui officia deserunt mollit anim id est laborum consectetur",
+          "Designed to last longer than whatever’s trending right now.",
       },
       {
-        title: "🌱 Magna Aliqua",
+        title: "🔒 Full Ownership",
         description:
-          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut",
+          "You own it all. No fine print. No weird licenses.",
       },
     ],
   },

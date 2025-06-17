@@ -66,9 +66,8 @@ export default function Services() {
           </div>
           <div className="service-details">
             <h3>Web Development</h3>
-            <span>Starting at $1500</span>
+            <span>Starts at $3000</span>
           </div>
-          <p>Dolor sit amet.</p>
         </Link>
       </AnimatedSection>
       <AnimatedSection animation="scale-in">
@@ -78,9 +77,8 @@ export default function Services() {
           </div>
           <div className="service-details">
             <h3>Logo Design</h3>
-            <span>Starting at $1000</span>
+            <span>Starts at $1200</span>
           </div>
-          <p>Dolor sit amet.</p>
         </Link>
       </AnimatedSection>
       <AnimatedSection animation="scale-in">
@@ -90,9 +88,8 @@ export default function Services() {
           </div>
           <div className="service-details">
             <h3>Social Media</h3>
-            <span>Starting at $2000</span>
+            <span>Starts at $3000</span>
           </div>
-          <p>Dolor sit amet.</p>
         </Link>
       </AnimatedSection>
       <AnimatedSection animation="scale-in">
@@ -102,9 +99,8 @@ export default function Services() {
           </div>
           <div className="service-details">
             <h3>Branding</h3>
-            <span>Starting at $0</span>
+            <span>Contact Us</span>
           </div>
-          <p>Dolor sit amet.</p>
         </Link>
       </AnimatedSection>
     </div>

@@ -12,11 +12,9 @@ import CurvesVideo from "../components/CurvesVideo";
 
 const serviceContent = {
   serviceHead: {
-    title: "Web *ipsum* dolor sit amet💙",
+    title: "Websites built *right*",
     description:
-      "Pellentesque nec nisi posuere, hendrerit massa non, pellentesque dolor suspendisse potenti. Donec consectetur tristique quam, eget blandit dui convallis non.",
-    buttonText: "Button",
-    buttonText2: "Button",
+      "Your website isn't just a page , it's your brand's first handshake. We build digital homes that feel like you — the kind where people take off their coat and stay awhile.",
     rating: "+32 Projects completed",
   },
   obliqueProjects: {
@@ -42,82 +40,80 @@ const serviceContent = {
     ],
   },
   problem: {
-    title: "Problem title",
+    title: "Websites That Don't Embarrass You",
     frustration: {
       title: "Your frustration",
       items: [
-        "Lorem ipsum dolor sit amet",
-        "Consectetur adipiscing elit",
-        "Sed do eiusmod tempor incididunt",
-        "Ut labore et dolore magna aliqua",
+        "Slow load times that make people bounce",
+        "Cheap templates that all look the same",
+        "Clunky mobile experience that breaks everything",
+        "Sites that “look nice” but don’t actually work",
       ],
     },
     solution: {
       items: [
-        "Ut enim ad minim veniam",
-        "Quis nostrud exercitation",
-        "Ullamco laboris nisi ut aliquip",
-        "Ex ea commodo consequat",
+        "Fast, clean, fully custom builds",
+        "Original designs that actually feel like your brand",
+        "Flawless mobile performance across all devices",
+        "Built to convert — not just sit there",
       ],
     },
   },
   solution: {
-    title: "Solution title",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: "Websites that work",
+    description:
+      "No shortcuts. No templates. Just clean, custom sites built for performance, not frustration.",
     items: [
       {
-        icon: "faEnvelopeOpenText",
-        title: "Lorem Ipsum",
+        title: "Custom Design",
         description:
-          "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+          "We build every site from scratch — no recycled templates, no copy-paste vibes.",
       },
       {
-        icon: "faBolt",
-        title: "Dolor Sit",
+        title: "Speed Obsessed",
         description:
-          "Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+          "Fast load times, smooth UX, zero patience lost. Because slow sites kill attention.",
       },
       {
-        icon: "faThumbsUp",
-        title: "Amet Consectetur",
+        title: "Built To Convert",
         description:
-          "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+          "Your site isn’t here to look pretty — it’s here to turn visitors into customers",
       },
     ],
   },
   benefits: {
-    title: "Benefits title",
-    subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: "What You Get With A Pixlerz Website",
+    subtitle: "Custom. Clean. Built to actually work.",
     items: [
       {
-        title: "🌟 Lorem Ipsum",
+        title: "🌟 Custom Everything",
         description:
-          "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+          "Built fully from scratch — no templates, no shortcuts.",
       },
       {
-        title: "🚀 Dolor Sit",
+        title: "🚀 Speed That Slaps",
         description:
-          "Ut enim ad minim veniam quis nostrud exercitation ullamco",
+          "Fast load times that keep people on your site.",
       },
       {
-        title: "🌈 Amet Consectetur",
+        title: "🎯 Conversion Focused",
         description:
-          "Duis aute irure dolor in reprehenderit in voluptate velit",
+          "Designed to guide visitors exactly where you want them.",
       },
       {
-        title: "🎉 Adipisicing Elit",
+        title: "📱 Mobile Perfect",
         description:
-          "Excepteur sint occaecat cupidatat non proident sunt in culpa",
+          "Smooth, responsive design across every screen size.",
       },
       {
-        title: "🚫 Tempor Incididunt",
+        title: "⚡ Fully Optimized Build",
         description:
-          "Qui officia deserunt mollit anim id est laborum consectetur",
+          "Clean code, smart structure, zero bloat.",
       },
       {
-        title: "🌱 Magna Aliqua",
+        title: "🔒 Locked & Secure",
         description:
-          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut",
+          "Built stable. Built safe. Built to last.",
       },
     ],
   },

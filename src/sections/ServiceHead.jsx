@@ -5,13 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function ServiceHead({
-  title,
-  description,
-  buttonText,
-  buttonText2,
-  rating,
-}) {
+export default function ServiceHead({ title, description, rating }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -33,25 +27,11 @@ export default function ServiceHead({
             }, index * 200); // 200ms de retraso entre cada estrella
           });
 
-          // Animar botones secuencialmente después de las estrellas
-          const firstButton = entry.target.querySelector(".servicehead-button");
-          const secondButton = entry.target.querySelector(
-            ".servicehead-button2"
-          );
-
-          // Primer botón con blur y transición de color
+          // Animar botón
+          const button = entry.target.querySelector(".servicehead-button2");
           setTimeout(() => {
-            firstButton.classList.add("visible");
-            // Añadir blur-visible después de un pequeño retraso para que la transición de color sea visible
-            setTimeout(() => {
-              firstButton.classList.add("blur-visible");
-            }, 100);
+            button.classList.add("visible");
           }, 1000);
-
-          // Segundo botón después del primero
-          setTimeout(() => {
-            secondButton.classList.add("visible");
-          }, 1500);
 
           observer.unobserve(entry.target);
         }
@@ -129,14 +109,9 @@ export default function ServiceHead({
           <p>{description}</p>
           <div className="servicehead-button-box">
             <Link to="/form">
-              <button className="servicehead-button animate-fade-in-up">
-                <span>{buttonText}</span>
-                <FontAwesomeIcon icon={faArrowRight} />
-              </button>
-            </Link>
-            <Link to="/form">
               <button className="servicehead-button2 animate-fade-in-up">
-                <span>{buttonText2}</span>
+                <span>Let's talk</span>
+                <FontAwesomeIcon icon={faArrowRight} />
               </button>
             </Link>
           </div>
