@@ -78,21 +78,25 @@ const serviceContent = {
       {
         title: "Brand Messaging",
         description: "Clear voice, sharp positioning, words that work.",
+        image: "./img/solution/brand-message.webp",
       },
       {
         title: "Visual Identity",
         description:
           "Logo, colors, typography — built for long-term use across every touchpoint.",
+        image: "./img/solution/brand-visual.webp",
       },
       {
         title: "Brand Strategy",
         description:
           "Aligned to your goals, your audience, and your business model.",
+        image: "./img/solution/brand-strategy.webp",
       },
       {
         title: "Full Brand Systems",
         description:
           "Guidelines, templates, and assets so your entire team stays on-brand.",
+        image: "./img/solution/brand-system.webp",
       },
     ],
   },
