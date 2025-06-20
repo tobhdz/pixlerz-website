@@ -9,6 +9,7 @@ import {
   faBullhorn,
 } from "@fortawesome/free-solid-svg-icons";
 import { faSmile } from "@fortawesome/free-regular-svg-icons";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
 
 export default function Footer() {
@@ -37,6 +38,26 @@ export default function Footer() {
         <Link to="/form" className="footer-btn">
           <FontAwesomeIcon icon={faBullhorn} /> Let's Talk
         </Link>
+      </div>
+      <div className="footer-socials">
+        <a
+          href="https://www.instagram.com/pixlerz_/"
+          className="footer-social-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/pixlerz"
+          className="footer-social-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
       </div>
       <div className="footer-copyright">
         Copyright © 2025 Pixlerz. All rights reserved.
