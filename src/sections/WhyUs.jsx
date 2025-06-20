@@ -37,11 +37,7 @@ export default function WhyUs() {
   return (
     <div className="whyus-container">
       <h3>Why Choose Us?</h3>
-      <h4>Work with Professional Developers</h4>
-      <p className="whyus-desc">
-        Collaborate with experienced and skilled developers who ensure
-        precision, innovation, and high-quality outcomes for your website.
-      </p>
+      <h4>Work with Professional Creatives</h4>
       <div className="whyus-cards">
         <div className="whyus-card">
           <div className="icon icon-1">
