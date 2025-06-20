@@ -158,7 +158,7 @@ export default function Service() {
         <Benefits {...serviceContent.benefits} />
       </AnimatedSection>
       <AnimatedSection animation="fade-in-left">
-        <FAQs {...serviceContent.faqs} />
+        <FAQs />
       </AnimatedSection>
       <AnimatedSection animation="fade-in-right">
         <ActionCard />

@@ -9,34 +9,6 @@ import FAQs from "../sections/FAQs.jsx";
 import ActionCard from "../sections/ActionCard.jsx";
 import AnimatedSection from "../components/AnimatedSection.jsx";
 
-const landingContent = {
-  faqs: {
-    title: "FAQs",
-    items: [
-      {
-        question: "What do you actually do?",
-        answer:
-          "We build badass brands. Strategy, design, websites, content, social—full-stack creative so you don't patch together five different freelancers.",
-      },
-      {
-        question: "Who works on my project?",
-        answer:
-          "No interns, no apprentices. You get senior-level designers, developers, strategists—all handpicked to be the dream team your brand deserves.",
-      },
-      {
-        question: "How long will this take?",
-        answer:
-          "Fast is for amateurs; done-right takes time. Brand identity typically takes 2–3 weeks, websites 4–8+ weeks, depending on scope and how fast you get us feedback.",
-      },
-      {
-        question: "Do you offer ongoing support?",
-        answer:
-          "Always. Launch day isn't goodbye—it's just the start line. We stick around so your brand doesn't fizzle out.",
-      },
-    ],
-  },
-};
-
 export default function Landing() {
   return (
     <div className="landing-container">
@@ -56,7 +28,7 @@ export default function Landing() {
       </AnimatedSection>
 
       <AnimatedSection animation="fade-in-left" delay={200}>
-        <FAQs {...landingContent.faqs} />
+        <FAQs />
       </AnimatedSection>
 
       <AnimatedSection animation="fade-in-right" delay={200}>

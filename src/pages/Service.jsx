@@ -144,7 +144,7 @@ export default function Service() {
       <Problem {...serviceContent.problem} />
       <Solution {...serviceContent.solution} />
       <Benefits {...serviceContent.benefits} />
-      <FAQs {...serviceContent.faqs} />
+      <FAQs />
       <ActionCard {...serviceContent.actionCard} />
     </div>
   );
