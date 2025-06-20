@@ -68,19 +68,19 @@ const serviceContent = {
         title: "Custom Design",
         description:
           "We build every site from scratch — no recycled templates, no copy-paste vibes.",
-        image: "./img/solution/solution-1.webp",
+        image: "/img/solutions/websites1.png",
       },
       {
         title: "Speed Obsessed",
         description:
           "Fast load times, smooth UX, zero patience lost. Because slow sites kill attention.",
-        image: "./img/solution/solution-2.webp",
+        image: "/img/solutions/websites2.png",
       },
       {
         title: "Built To Convert",
         description:
           "Your site isn't here to look pretty — it's here to turn visitors into customers",
-        image: "./img/solution/solution-3.webp",
+        image: "/img/solutions/websites3.png",
       },
     ],
   },

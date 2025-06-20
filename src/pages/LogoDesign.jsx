@@ -69,18 +69,18 @@ const serviceContent = {
       {
         title: "Original Concepts",
         description: "Built from scratch, designed for your identity.",
-        image: "./img/solution/logo-concept.webp",
+        image: "/img/solutions/logos1.png",
       },
       {
         title: "Built to Scale",
         description:
           "Works perfectly at every size, from business cards to billboards.",
-        image: "./img/solution/logo-scale.webp",
+        image: "/img/solutions/logos2.png",
       },
       {
         title: "Timeless Design",
         description: "Not trendy. Not dated. Built to age well.",
-        image: "./img/solution/logo-timeless.webp",
+        image: "/img/solutions/logos3.png",
       },
     ],
   },

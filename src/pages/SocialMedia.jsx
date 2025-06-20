@@ -60,24 +60,24 @@ const serviceContent = {
       {
         title: "Brand-Aligned Content",
         description: "Every post looks, sounds, and feels like your brand.",
-        image: "./img/solution/social-brand.webp",
+        image: "/img/solutions/socialmedia1.png",
       },
       {
         title: "Growth-Driven Strategy",
         description: "Built to attract, engage, and build audience momentum.",
-        image: "./img/solution/social-growth.webp",
+        image: "/img/solutions/socialmedia2.png",
       },
       {
         title: "Platform-Perfect Execution",
         description:
           "Content optimized for where your audience actually lives.",
-        image: "./img/solution/social-platform.webp",
+        image: "/img/solutions/socialmedia3.png",
       },
       {
         title: "Scroll-Stopping Design",
         description:
           "Creative that makes people stop mid-scroll and pay attention.",
-        image: "./img/solution/social-scroll.webp",
+        image: "/img/solutions/socialmedia4.png",
       },
     ],
   },
