@@ -1,18 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Hero.css";
+import SmartVideo from "../components/SmartVideo";
 
 export default function Hero() {
-  const videoRef = useRef(null);
   const [useFallback, setUseFallback] = useState(false);
   const [fallbackError, setFallbackError] = useState(false);
-
-  useEffect(() => {
-    if (videoRef.current && !useFallback) {
-      videoRef.current.play().catch(() => {
-        setUseFallback(true);
-      });
-    }
-  }, [useFallback]);
 
   const handleFallbackError = () => {
     setFallbackError(true);
@@ -31,17 +23,11 @@ export default function Hero() {
           onError={handleFallbackError}
         />
       ) : (
-        <video
-          ref={videoRef}
+        <SmartVideo
           className="hero-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          disablePictureInPicture
-          disableRemotePlayback
           src="/img/headervideo.mp4"
+          poster="/img/headervideo.jpg"
+          forceLoad={true}
         />
       )}
       <img

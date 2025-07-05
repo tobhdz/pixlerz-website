@@ -74,7 +74,8 @@
         font-size: 18px;
         color: #C2C2C2;
         padding-inline: 100px;
-        font-weight: 400
+        font-weight: 400;
+        text-align: center;
     }
     
 }

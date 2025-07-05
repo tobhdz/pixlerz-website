@@ -1,21 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
+import SmartVideo from "./SmartVideo";
 
 export default function CurvesVideo() {
-  const videoRef = useRef(null);
   const [useFallback, setUseFallback] = useState(false);
   const [fallbackError, setFallbackError] = useState(false);
 
-  useEffect(() => {
-    if (videoRef.current && !useFallback) {
-      videoRef.current.play().catch(() => {
-        setUseFallback(true);
-      });
-    }
-  }, [useFallback]);
-
   const handleFallbackError = () => {
     setFallbackError(true);
-    setUseFallback(false); // Volver al video si el GIF falla
+    setUseFallback(false);
   };
 
   if (useFallback && !fallbackError) {
@@ -31,17 +23,10 @@ export default function CurvesVideo() {
   }
 
   return (
-    <video
-      ref={videoRef}
+    <SmartVideo
       className="curvesvideo-service-page"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-      disablePictureInPicture
-      disableRemotePlayback
       src="/img/curves.mp4"
+      poster="/img/curves.jpg"
     />
   );
 }

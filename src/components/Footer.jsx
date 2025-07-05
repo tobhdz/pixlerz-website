@@ -59,8 +59,21 @@ export default function Footer() {
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>
+      <div className="footer-legal">
+        <Link to="/privacy-policy" className="footer-legal-link">
+          Privacy Policy
+        </Link>
+        <span className="footer-legal-separator">&middot;</span>
+        <Link to="/terms-of-use" className="footer-legal-link">
+          Terms of Use
+        </Link>
+        <span className="footer-legal-separator">&middot;</span>
+        <Link to="/cookie-policy" className="footer-legal-link">
+          Cookie Policy
+        </Link>
+      </div>
       <div className="footer-copyright">
-        Copyright © 2025 Pixlerz. All rights reserved.
+        Copyright © 2025 Pixlerz LLC. All rights reserved.
       </div>
     </div>
   );

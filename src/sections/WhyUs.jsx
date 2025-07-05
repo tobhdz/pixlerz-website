@@ -105,8 +105,8 @@ export default function WhyUs() {
           </div>
         </div>
         <img
-          src="/img/innovation.webp"
-          alt="Innovation"
+          src="/img/rocket.webp"
+          alt="Pixlerz Rocket"
           className="whyus-box-img"
         />
       </div>

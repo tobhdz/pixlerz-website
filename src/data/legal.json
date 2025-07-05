@@ -1,0 +1,175 @@
+{
+  "privacy-policy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "June 2025",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "At Pixlerz, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information."
+      },
+      { "type": "heading", "text": "1. Data Controller" },
+      {
+        "type": "paragraph",
+        "text": "Pixlerz LLC, based in the United States, is the controller of any personal data submitted through this website."
+      },
+      { "type": "heading", "text": "2. Information We Collect" },
+      {
+        "type": "paragraph",
+        "text": "When you fill out our contact form (via Typeform), we may collect:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "First and last name",
+          "Email address",
+          "Phone number",
+          "Brand or project name",
+          "Estimated timeline and budget",
+          "Project description",
+          "How you heard about Pixlerz"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Providing this information is entirely voluntary."
+      },
+      { "type": "heading", "text": "3. How We Use Your Data" },
+      {
+        "type": "paragraph",
+        "text": "We use your data to:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Respond to inquiries and provide project estimates",
+          "Communicate regarding your project or services",
+          "Perform internal analysis to improve our services"
+        ]
+      },
+      { "type": "heading", "text": "4. Legal Basis" },
+      {
+        "type": "paragraph",
+        "text": "We process your data based on your informed and voluntary consent."
+      },
+      { "type": "heading", "text": "5. Data Retention" },
+      {
+        "type": "paragraph",
+        "text": "We retain your data only as long as necessary for the purposes described above or until you request its deletion."
+      },
+      { "type": "heading", "text": "6. Data Sharing" },
+      {
+        "type": "paragraph",
+        "text": "We do not share your personal information with third parties, except for essential service providers."
+      },
+      { "type": "heading", "text": "7. International Data Transfers" },
+      {
+        "type": "paragraph",
+        "text": "Because Pixlerz operates in the United States, your data may be transferred and stored on servers located in the U.S., where privacy laws may differ from those in your country."
+      },
+      { "type": "heading", "text": "8. Security" },
+      {
+        "type": "paragraph",
+        "text": "We implement technical and organizational measures to protect your data against unauthorized access, disclosure, or misuse."
+      },
+      { "type": "heading", "text": "9. Your Rights" },
+      { "type": "heading", "text": "10. Updates to This Policy" },
+      {
+        "type": "paragraph",
+        "text": "We may update this policy without prior notice. The current version will always be available on this website."
+      }
+    ]
+  },
+  "terms-of-use": {
+    "title": "Terms of Use",
+    "lastUpdated": "June 2025",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "By accessing or using this website, you agree to be bound by these Terms of Use. If you do not agree, please do not use this site."
+      },
+      { "type": "heading", "text": "1. Purpose" },
+      {
+        "type": "paragraph",
+        "text": "This website provides information about Pixlerz's design services and offers a way to contact us for business inquiries."
+      },
+      { "type": "heading", "text": "2. Acceptable Use" },
+      {
+        "type": "paragraph",
+        "text": "You agree not to:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Use the site for unlawful purposes",
+          "Copy, distribute, or reuse our content without permission"
+        ]
+      },
+      { "type": "heading", "text": "3. Intellectual Property" },
+      {
+        "type": "paragraph",
+        "text": "All content on this site (text, images, designs, graphics, videos) is the property of Pixlerz LLC, unless otherwise stated. Unauthorized use is prohibited."
+      },
+      { "type": "heading", "text": "4. External Links" },
+      {
+        "type": "paragraph",
+        "text": "This website may contain links to external websites. We are not responsible for their content or privacy practices."
+      },
+      { "type": "heading", "text": "5. Disclaimer" },
+      {
+        "type": "paragraph",
+        "text": "We do our best to ensure the accuracy of the information on this site, but we do not guarantee it. Pixlerz LLC is not liable for any loss or damage from the use of this site."
+      },
+      { "type": "heading", "text": "6. Privacy" },
+      {
+        "type": "paragraph",
+        "text": "Your use of this site is also subject to our Privacy Policy."
+      },
+      { "type": "heading", "text": "7. Jurisdiction" },
+      {
+        "type": "paragraph",
+        "text": "These terms are governed by the laws of the United States."
+      }
+    ]
+  },
+  "cookie-policy": {
+    "title": "Cookie Policy",
+    "lastUpdated": "June 2025",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Pixlerz uses only essential cookies that are necessary for the basic operation of this website."
+      },
+      { "type": "heading", "text": "1. What Are Cookies?" },
+      {
+        "type": "paragraph",
+        "text": "Cookies are small text files stored in your browser when you visit a website."
+      },
+      { "type": "heading", "text": "2. Cookies We Use" },
+      {
+        "type": "paragraph",
+        "text": "We only use technical cookies to:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Load images and videos properly",
+          "Render fonts and visual elements"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "We do not use tracking, advertising, or analytics cookies."
+      },
+      { "type": "heading", "text": "3. Managing Cookies" },
+      {
+        "type": "paragraph",
+        "text": "You can manage or delete cookies in your browser settings. Blocking cookies may affect how this site functions."
+      },
+      { "type": "heading", "text": "4. Updates to This Policy" },
+      {
+        "type": "paragraph",
+        "text": "We may update this Cookie Policy without prior notice. The current version will always be available on this page."
+      }
+    ]
+  }
+} 
