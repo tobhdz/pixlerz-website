@@ -1,0 +1,130 @@
+.standard-infinite-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+.standard-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.standard-carousel-track {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    /* Velocidad más rápida y dinámica */
+    animation: scrollStandardCarousel 45s linear infinite;
+    min-width: max-content;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    padding: 0;
+    margin: 0;
+    contain: layout style paint;
+}
+
+.standard-infinite-carousel.reverse .standard-carousel-track {
+    animation: scrollStandardCarouselReverse 45s linear infinite;
+}
+
+.standard-carousel-item {
+    flex-shrink: 0;
+    min-width: 0;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+/* Animación estándar para carrusel infinito */
+@keyframes scrollStandardCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Mover exactamente el ancho de un set completo */
+        transform: translateX(calc(-33.333%));
+    }
+}
+
+@keyframes scrollStandardCarouselReverse {
+    0% {
+        transform: translateX(calc(-33.333%));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Media queries para diferentes resoluciones */
+@media screen and (max-width: 768px) {
+    .standard-carousel-track {
+        gap: 20px;
+        /* Velocidad más rápida en móviles */
+        animation-duration: 60s;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .standard-carousel-track {
+        gap: 15px;
+        /* Velocidad más rápida en pantallas pequeñas */
+        animation-duration: 75s;
+    }
+}
+
+/* Optimizaciones para pantallas táctiles */
+@media (hover: none) and (pointer: coarse) {
+    .standard-carousel-track {
+        /* Velocidad más rápida en dispositivos táctiles */
+        animation-duration: 90s;
+    }
+}
+
+/* Asegurar que el efecto funcione en diferentes niveles de zoom */
+@media screen and (min-resolution: 2dppx) {
+    .standard-carousel-track {
+        transform: translateZ(0);
+    }
+}
+
+/* Optimizaciones para pantallas de alta densidad */
+@media screen and (min-resolution: 3dppx) {
+    .standard-carousel-track {
+        transform: translateZ(0);
+        will-change: transform;
+    }
+}
+
+/* Asegurar que el efecto funcione en diferentes niveles de zoom del navegador */
+@media screen and (max-width: 100vw) {
+    .standard-carousel-track {
+        transform: translateZ(0);
+    }
+}
+
+/* Optimizaciones específicas para diferentes niveles de zoom */
+@media screen and (min-width: 2000px) {
+    .standard-carousel-track {
+        /* Velocidad más rápida para pantallas muy anchas */
+        animation-duration: 50s;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .standard-carousel-track {
+        /* Velocidad más rápida para pantallas medianas */
+        animation-duration: 55s;
+    }
+}
+
+/* Asegurar que el efecto funcione en diferentes navegadores */
+@supports (animation-timeline: scroll()) {
+    .standard-carousel-track {
+        animation-timeline: auto;
+    }
+} 

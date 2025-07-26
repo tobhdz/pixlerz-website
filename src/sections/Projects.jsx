@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./Projects.css";
-import ProjectCard from "../components/ProjectCard";
+import StandardInfiniteCarousel from "../components/StandardInfiniteCarousel";
 
 export default function Projects() {
   const titleRef = useRef(null);
@@ -69,35 +69,23 @@ export default function Projects() {
 
   return (
     <div className="projects-container home-slider" id="projects">
-      <div className="projects">
-        {[1, 2].map((_, index) => (
-          <div key={index} className="projects-slide" aria-hidden={index === 1}>
-            {dynamicFundingProjects.map((project, i) => (
-              <ProjectCard key={i} {...project} />
-            ))}
-          </div>
-        ))}
-      </div>
+      <StandardInfiniteCarousel
+        projects={dynamicFundingProjects}
+        reverse={false}
+        className="projects"
+      />
 
-      <div className="projects projects-reverse">
-        {[1, 2].map((_, index) => (
-          <div key={index} className="projects-slide" aria-hidden={index === 1}>
-            {systemsEffectProjects.map((project, i) => (
-              <ProjectCard key={i} {...project} />
-            ))}
-          </div>
-        ))}
-      </div>
+      <StandardInfiniteCarousel
+        projects={systemsEffectProjects}
+        reverse={true}
+        className="projects"
+      />
 
-      <div className="projects">
-        {[1, 2].map((_, index) => (
-          <div key={index} className="projects-slide" aria-hidden={index === 1}>
-            {resultsStaffingProjects.map((project, i) => (
-              <ProjectCard key={i} {...project} />
-            ))}
-          </div>
-        ))}
-      </div>
+      <StandardInfiniteCarousel
+        projects={resultsStaffingProjects}
+        reverse={false}
+        className="projects"
+      />
     </div>
   );
 }
