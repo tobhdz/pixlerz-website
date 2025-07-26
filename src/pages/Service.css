@@ -6,6 +6,9 @@
     padding-bottom: 90px;
     padding-top: 200px;
     position: relative;
+    /* Allow overflow for oblique projects */
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .service-container .curvesvideo {

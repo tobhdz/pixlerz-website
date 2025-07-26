@@ -8,6 +8,20 @@
     overflow: hidden;
 }
 
+/* Allow overflow for oblique projects to show the full skew effect */
+.projects-container:has(.projects.oblique) {
+    overflow: visible;
+}
+
+.projects-container .projects.oblique {
+    overflow: visible;
+}
+
+/* Specific styling for service page oblique projects */
+.service-container .projects-container {
+    overflow: visible;
+}
+
 .projects-container h2.visible .projects-title1,
 .projects-container h2.visible .projects-title2 {
     animation-play-state: running;
@@ -23,9 +37,16 @@
     max-width: 100vw;
 }
 
+/* For oblique projects, allow overflow to show the full skew effect */
 .projects.oblique {
+    overflow: visible;
     transform: skewY(3deg);
+    /* Ensure the skewed content doesn't get cut off */
+    margin: 20px 0;
+    padding: 20px 0;
 }
+
+
 
 .projects-slide {
     display: flex;
