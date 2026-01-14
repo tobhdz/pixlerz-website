@@ -1,7 +1,14 @@
+# Add MIME type for .webp files
+AddType image/webp .webp
+
 <IfModule mod-rewrite.c>
   RewriteEngine On
   RewriteBase /
   RewriteRule ^index\.html$ - [L]
+  
+  # Allow direct access to client images without rewriting
+  RewriteRule ^img/clients/(.*)$ - [L]
+  
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-l

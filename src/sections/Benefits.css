@@ -41,7 +41,7 @@
     flex: 0 1 calc(33.333% - 32px);
     min-width: 300px;
     padding: 32px;
-    background: linear-gradient(#3e5381, #10294b);
+    background: linear-gradient(#4d628f78, #415a7d8c);
     border: 1px solid #FFFFFF34;
     border-radius: 20px;
 }

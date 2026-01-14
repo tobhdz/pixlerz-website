@@ -27,7 +27,6 @@ export default function Services() {
           </div>
           <div className="service-details">
             <h3>Web Development</h3>
-            <span>Starts at $3,000</span>
           </div>
         </Link>
       </AnimatedSection>
@@ -38,7 +37,6 @@ export default function Services() {
           </div>
           <div className="service-details">
             <h3>Logo Design</h3>
-            <span>Starts at $1,200</span>
           </div>
         </Link>
       </AnimatedSection>
@@ -49,7 +47,6 @@ export default function Services() {
           </div>
           <div className="service-details">
             <h3>Social Media</h3>
-            <span>Starts at $3,000</span>
           </div>
         </Link>
       </AnimatedSection>
@@ -60,7 +57,6 @@ export default function Services() {
           </div>
           <div className="service-details">
             <h3>Branding</h3>
-            <span>Contact Us</span>
           </div>
         </Link>
       </AnimatedSection>

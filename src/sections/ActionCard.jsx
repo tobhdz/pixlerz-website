@@ -99,6 +99,9 @@ export default function ActionCard() {
               <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </Link>
+          <div className="actioncard-phone">
+            Or call us at <a href="tel:+19454029180">+1 945-402-9180</a>
+          </div>
         </div>
       </div>
     </div>
