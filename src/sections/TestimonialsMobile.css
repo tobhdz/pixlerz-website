@@ -1,7 +1,7 @@
 /*
-  Mobile testimonials: hidden on desktop, shown ≤700px.
+  Mobile testimonials – hidden on desktop, shown ≤700px.
   Uses ::before/::after gradient overlays instead of mask-image
-  to avoid the rendering conflict with semi-transparent card backgrounds.
+  to avoid the rendering bug with semi-transparent card backgrounds.
 */
 
 .tm-wrapper {
@@ -20,16 +20,27 @@
         overflow: hidden;
         padding-inline: 16px;
         box-sizing: border-box;
+
+        /* Appear animation: starts invisible */
+        opacity: 0;
+        transform: scale(0.95);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
 
-    /* ── Fade overlays (replaces mask-image) ── */
+    /* Visible state: triggered by IntersectionObserver */
+    .tm-wrapper.tm-visible {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    /* ── Fade overlays matching desktop's aggressive 33% masking ── */
     .tm-wrapper::before,
     .tm-wrapper::after {
         content: "";
         position: absolute;
         left: 0;
         right: 0;
-        height: 90px;
+        height: 180px;
         z-index: 2;
         pointer-events: none;
     }
@@ -44,7 +55,7 @@
         background: linear-gradient(to top, var(--deepblue), transparent);
     }
 
-    /* ── Each set of cards (duplicated for seamless loop) ── */
+    /* ── Each card set: starts paused until visible ── */
     .tm-set {
         display: flex;
         flex-direction: column;
@@ -52,9 +63,15 @@
         margin-bottom: 16px;
         flex-shrink: 0;
         animation: tmScroll 30s linear infinite;
+        animation-play-state: paused;
     }
 
-    /* ── Scroll animation: move up by exactly one full set height + gap ── */
+    /* Start scrolling only when wrapper is visible */
+    .tm-wrapper.tm-visible .tm-set {
+        animation-play-state: running;
+    }
+
+    /* ── Scroll: move up one full set height + gap ── */
     @keyframes tmScroll {
         to {
             transform: translateY(calc(-100% - 16px));
