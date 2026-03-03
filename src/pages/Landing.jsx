@@ -28,7 +28,7 @@ export default function Landing() {
         <WhyUs />
       </AnimatedSection>
 
-      <AnimatedSection animation="scale-in" delay={200}>
+      <AnimatedSection animation="fade-in-up" delay={200}>
         <Testimonials />
       </AnimatedSection>
 

@@ -19,13 +19,14 @@
 
 .testimonials-columns-container {
     max-width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 30px;
     position: relative;
     overflow: hidden;
-    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 96%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 96%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
 }
 
 
@@ -89,18 +90,16 @@
     from {
         opacity: 0;
         filter: blur(10px);
-        transform: translateY(50px) scale(1.1);
     }
 
     to {
         opacity: 1;
         filter: blur(0);
-        transform: translateY(0) scale(1);
     }
 }
 
 .testimonials-container.visible .testimonials-column {
-    animation: appearTestimonials 0.6s ease-in-out forwards;
+    animation: appearTestimonials 0.8s ease-in-out forwards;
 }
 
 .testimonial-image,
