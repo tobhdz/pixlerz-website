@@ -105,7 +105,7 @@ export default function ServiceHead({ title, description, rating }) {
           </div>
         </div>
         <div className="servicehead-content">
-          <h3>{processTitle(title)}</h3>
+          <h1>{processTitle(title)}</h1>
           <p>{description}</p>
           <div className="servicehead-button-box">
             <Link to="/form">

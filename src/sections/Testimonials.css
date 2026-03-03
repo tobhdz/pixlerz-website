@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 
-.testimonials-container h3 {
+.testimonials-container h2 {
     font-size: 40px;
     font-weight: 600;
     color: #fff;
@@ -23,20 +23,12 @@
     justify-content: space-between;
     gap: 30px;
     position: relative;
-    mask-image: linear-gradient(to bottom, transparent 0%, black, black, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black, black, transparent 100%);
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 96%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 96%);
 }
 
-.testimonials-columns-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transform: scaley(1.005);
-}
+
 
 .testimonials-column {
     flex: 1;

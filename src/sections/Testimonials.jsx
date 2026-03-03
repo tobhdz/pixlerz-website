@@ -58,7 +58,7 @@ const testimonios = [
 export default function Testimonials() {
   return (
     <div className="testimonials-container" id="testimonials">
-      <h3>Testimonials</h3>
+      <h2>Testimonials</h2>
 
       <div className="testimonials-columns-container">
         <div className="testimonials-column">

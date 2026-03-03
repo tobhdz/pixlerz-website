@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import "./FormPage.css";
 
 export default function FormPage() {
@@ -24,6 +25,10 @@ export default function FormPage() {
 
   return (
     <div className="formpage-container form-page">
+      <Helmet>
+        <title>Let's Talk | Pixlerz</title>
+        <meta name="description" content="Get in touch with Pixlerz to start transforming your brand." />
+      </Helmet>
       <div data-tf-live="01JRZMPAY52RS7JTD7ARD2YQH1"></div>
     </div>
   );

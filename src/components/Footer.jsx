@@ -12,7 +12,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="footer-container">
+    <footer className="footer-container">
       <div className="footer-logo-box">
         <img
           src="./img/pixlerztext.png"
@@ -73,6 +73,6 @@ export default function Footer() {
       <div className="footer-copyright">
         Copyright © 2025 Pixlerz LLC. All rights reserved.
       </div>
-    </div>
+    </footer>
   );
 }

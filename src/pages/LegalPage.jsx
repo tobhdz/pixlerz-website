@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import legalData from "../data/legal.json";
 import "./LegalPage.css";
 
@@ -11,6 +12,9 @@ const LegalPageContent = () => {
   if (!pageData) {
     return (
       <div className="legal-content">
+        <Helmet>
+          <title>Page Not Found | Pixlerz</title>
+        </Helmet>
         <h1>404 - Page Not Found</h1>
       </div>
     );
@@ -37,6 +41,10 @@ const LegalPageContent = () => {
 
   return (
     <div className="legal-content">
+      <Helmet>
+        <title>{pageData.title} | Pixlerz</title>
+        <meta name="description" content={`Pixlerz ${pageData.title}`} />
+      </Helmet>
       <h1>{pageData.title}</h1>
       {pageData.content.map(renderContent)}
       <p className="last-updated">Last updated: {pageData.lastUpdated}</p>

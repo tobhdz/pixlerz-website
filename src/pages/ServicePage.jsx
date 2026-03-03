@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import "./Service.css";
 import ServiceHead from "../sections/ServiceHead.jsx";
 import ObliqueProjects from "../sections/ObliqueProjects.jsx";
@@ -11,8 +12,15 @@ import AnimatedSection from "../components/AnimatedSection.jsx";
 import CurvesVideo from "../components/CurvesVideo";
 
 export default function ServicePage({ id, content, sliderClassName }) {
+  // Strip markdown-like syntax (*text*) for the plain SEO title
+  const plainTitle = content.serviceHead.title.replace(/\*/g, "");
+  
   return (
     <div className="service-container" id={id}>
+      <Helmet>
+        <title>{plainTitle} | Pixlerz</title>
+        <meta name="description" content={content.serviceHead.description} />
+      </Helmet>
       <CurvesVideo />
       <AnimatedSection animation="scale-in" zIndex={7}>
         <ServiceHead {...content.serviceHead} />

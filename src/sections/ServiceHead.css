@@ -19,7 +19,8 @@
 
     #logodesign & {
         max-width: 700px;
-        h3 {
+
+        h1 {
             line-height: 50px;
             margin-bottom: 20px
         }
@@ -90,12 +91,13 @@
     gap: 15px;
     text-shadow: 1px 1px #03070d9a, 0 0 10px #293a6f93;
 
-    h3 {
+    h1 {
         font-size: 54px;
         font-weight: 500;
         text-align: center;
+
         &::after {
-            content:'💙';
+            content: '💙';
             margin-left: 10px;
         }
     }
@@ -154,18 +156,21 @@
     }
 
     .servicehead-content {
-        h3 {
+        h1 {
             font-size: 36px;
-            line-height: auto!important;
-            margin-bottom: 0!important;
+            line-height: auto !important;
+            margin-bottom: 0 !important;
         }
+
         .instrument-italic {
             font-size: 48px;
         }
+
         p {
             padding: 0;
             font-size: 18px;
             text-align: center;
+
             &::before {
                 font-size: 14px;
             }
@@ -187,7 +192,7 @@
 /* Specific tweaks for copywriting */
 
 #branding .servicehead-content p::before {
-    content:"Not trendy. Not forgettable. Built to last.";
+    content: "Not trendy. Not forgettable. Built to last.";
     display: block;
     text-align: center;
     margin-bottom: 20px;

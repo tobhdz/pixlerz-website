@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import "./Landing.css";
 import Hero from "../sections/Hero.jsx";
 import Services from "../sections/Services.jsx";
@@ -12,6 +13,10 @@ import AnimatedSection from "../components/AnimatedSection.jsx";
 export default function Landing() {
   return (
     <div className="landing-container">
+      <Helmet>
+        <title>Pixlerz | Design Studio</title>
+        <meta name="description" content="Transforming brands globally with impactful design, web development, social media, and pure aesthetic excellence." />
+      </Helmet>
       <Hero />
       <Services />
 

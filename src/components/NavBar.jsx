@@ -10,7 +10,7 @@ export default function NavBar() {
   };
 
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" onClick={() => setIsOpen(false)}>
           <img src="./img/pixlerzicon.png" alt="Logo" className="logo" />
@@ -55,6 +55,6 @@ export default function NavBar() {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }
