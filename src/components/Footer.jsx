@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBookmark,
-  faLightbulb,
   faLaptopCode,
   faVideo,
   faBullhorn,
@@ -18,7 +16,7 @@ export default function Footer() {
       <div className="footer-logo-box">
         <img
           src="./img/pixlerztext.png"
-          alt="Weplash Logo"
+          alt="Pixlerz Logo"
           className="footer-logo"
         />
       </div>

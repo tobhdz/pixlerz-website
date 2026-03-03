@@ -108,6 +108,7 @@ export default function WhyUs() {
           src="/img/rocket.webp"
           alt="Pixlerz Rocket"
           className="whyus-box-img"
+          loading="lazy"
         />
       </div>
     </div>

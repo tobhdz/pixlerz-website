@@ -1,9 +1,9 @@
 import React from "react";
 import "./Testimonials.css";
 import TestimonialCard from "../components/TestimonialCard";
+import TestimonialsMobile from "./TestimonialsMobile";
 
-export default function Testimonials() {
-  const testimonios = [
+const testimonios = [
     {
       nombre: "Urban Nova",
       subtitulo: "Jason Carter",
@@ -53,8 +53,9 @@ export default function Testimonials() {
         "I have a hard time articulating what I am looking for when it comes to design work, but even with my lack of direction, Pixlerz worked with me and grasped what I was looking for even better than I did. Their eye for design and detail is phenomenal, I would highly recommend.",
       imagen: "./img/clients/JoeCowling.webp",
     },
-  ];
+];
 
+export default function Testimonials() {
   return (
     <div className="testimonials-container" id="testimonials">
       <h3>Testimonials</h3>
@@ -102,6 +103,9 @@ export default function Testimonials() {
           ))}
         </div>
       </div>
+
+      {/* Mobile: uses gradient overlays instead of mask-image */}
+      <TestimonialsMobile testimonios={testimonios} />
     </div>
   );
 }

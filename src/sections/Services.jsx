@@ -4,15 +4,11 @@ import "./Services.css";
 import AnimatedSection from "../components/AnimatedSection.jsx";
 import SmartVideo from "../components/SmartVideo";
 
-const VideoComponent = ({ src, alt }) => {
-  // Forzar carga inmediata para evitar problemas de observer
+const VideoComponent = ({ src }) => {
   return (
     <SmartVideo
       src={src}
       poster={src.replace(".mp4", ".jpg")}
-      alt={alt}
-      loading="lazy"
-      forceLoad={true}
     />
   );
 };

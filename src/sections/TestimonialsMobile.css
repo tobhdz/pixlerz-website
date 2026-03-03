@@ -1,0 +1,63 @@
+/*
+  Mobile testimonials: hidden on desktop, shown ≤700px.
+  Uses ::before/::after gradient overlays instead of mask-image
+  to avoid the rendering conflict with semi-transparent card backgrounds.
+*/
+
+.tm-wrapper {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    /* ── Container ── */
+    .tm-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+        padding-inline: 16px;
+        box-sizing: border-box;
+    }
+
+    /* ── Fade overlays (replaces mask-image) ── */
+    .tm-wrapper::before,
+    .tm-wrapper::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 90px;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .tm-wrapper::before {
+        top: 0;
+        background: linear-gradient(to bottom, var(--deepblue), transparent);
+    }
+
+    .tm-wrapper::after {
+        bottom: 0;
+        background: linear-gradient(to top, var(--deepblue), transparent);
+    }
+
+    /* ── Each set of cards (duplicated for seamless loop) ── */
+    .tm-set {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 16px;
+        flex-shrink: 0;
+        animation: tmScroll 30s linear infinite;
+    }
+
+    /* ── Scroll animation: move up by exactly one full set height + gap ── */
+    @keyframes tmScroll {
+        to {
+            transform: translateY(calc(-100% - 16px));
+        }
+    }
+}
