@@ -1,7 +1,7 @@
 /*
   Mobile testimonials – hidden on desktop, shown ≤700px.
-  Uses ::before/::after gradient overlays instead of mask-image.
-  Scroll driven by JS requestAnimationFrame (no CSS animation = no blink).
+  Mirrors StandardInfiniteCarousel GPU isolation pattern
+  (the only proven working infinite scroll on iOS Safari).
 */
 
 .tm-wrapper {
@@ -19,51 +19,63 @@
         padding-inline: 16px;
         box-sizing: border-box;
 
-        /* Appear animation */
+        /* Fade: mask-image (paint-level, no extra compositing layers) */
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+        mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+
+        /* Appear animation — opacity only */
         opacity: 0;
-        transform: scale(0.95);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        transition: opacity 0.6s ease-out;
     }
 
     .tm-wrapper.tm-visible {
         opacity: 1;
-        transform: scale(1);
     }
 
-    /* Fade overlays – 33% top/bottom */
-    .tm-wrapper::before,
-    .tm-wrapper::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        height: 180px;
-        z-index: 2;
-        pointer-events: none;
-    }
-
-    .tm-wrapper::before {
-        top: 0;
-        background: linear-gradient(to bottom, var(--deepblue), transparent);
-    }
-
-    .tm-wrapper::after {
-        bottom: 0;
-        background: linear-gradient(to top, var(--deepblue), transparent);
-    }
-
-    /* Track: positioned by JS, no CSS animation */
+    /* Track: simple flex column, no animation */
     .tm-track {
         display: flex;
         flex-direction: column;
-        will-change: transform;
     }
 
+    /*
+      Each set animated individually.
+      GPU properties match .standard-carousel-track exactly:
+      - will-change: transform
+      - backface-visibility: hidden
+      - transform: translateZ(0) as BASE (prevents GPU de-composition at loop reset)
+      - contain: layout style paint
+    */
     .tm-set {
         display: flex;
         flex-direction: column;
         gap: 16px;
-        padding-bottom: 16px;
+        margin-bottom: 16px;
         flex-shrink: 0;
+        animation: tmScroll 25s linear infinite;
+        will-change: transform;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        contain: layout style paint;
+    }
+
+    /*
+      Card GPU isolation — matches .standard-carousel-item
+    */
+    .tm-wrapper .testimonial-card {
+        will-change: transform;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    @keyframes tmScroll {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+
+        100% {
+            transform: translate3d(0, calc(-100% - 16px), 0);
+        }
     }
 }
