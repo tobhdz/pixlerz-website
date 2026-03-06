@@ -116,6 +116,11 @@ body {
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
+.animate-fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
 .animate-scale-in {
   opacity: 0;
   transform: scale(0.95);
@@ -137,10 +142,18 @@ body {
 /* Estado visible */
 .animate-fade-in-up.visible,
 .animate-fade-in-left.visible,
-.animate-fade-in-right.visible,
+.animate-fade-in-right.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.animate-fade-in.visible {
+  opacity: 1;
+}
+
 .animate-scale-in.visible {
   opacity: 1;
-  transform: translate(0) scale(1);
+  transform: scale(1);
 }
 
 .animate-star-fade-in-down.visible {

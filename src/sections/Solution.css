@@ -24,7 +24,9 @@
     margin-bottom: 10px;
     text-align: center;
     font-weight: 600;
-    #branding &, #socialmedia & {
+
+    #branding &,
+    #socialmedia & {
         font-size: 40px
     }
 }
@@ -83,7 +85,7 @@
         flex-direction: column;
         align-items: center;
     }
-    
+
     .solution-item {
         flex: 0 1 100%;
         max-width: 400px;

@@ -7,7 +7,7 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
-    padding: 20px;
+    padding: 24px;
 }
 
 .testimonial-content {
@@ -16,7 +16,7 @@
 
 .testimonial-text {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     color: white;
 }
@@ -28,8 +28,8 @@
 }
 
 .testimonial-image {
-    width: 50px;
-    height: 50px;
+    width: 58px;
+    height: 58px;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
@@ -43,12 +43,12 @@
 
 .testimonial-info h4 {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
 }
 
 .testimonial-subtitle {
     margin: 4px 0 0 0;
-    font-size: 14px;
+    font-size: 15px;
     color: #FFFFFF99;
 }

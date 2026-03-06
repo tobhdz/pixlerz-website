@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Services.css";
 import AnimatedSection from "../components/AnimatedSection.jsx";
-import SmartVideo from "../components/SmartVideo";
 
-const VideoComponent = ({ src }) => {
+const VideoComponent = ({ src, alt }) => {
+  const videoRef = useRef(null);
+  const [useFallback, setUseFallback] = useState(false);
+
+  useEffect(() => {
+    if (videoRef.current && !useFallback) {
+      videoRef.current.play().catch(() => {
+        setUseFallback(true);
+      });
+    }
+  }, [useFallback]);
+
+  if (useFallback) {
+    const gifSrc = src.replace(".mp4", ".gif");
+    return <img src={gifSrc} alt={alt} loading="lazy" />;
+  }
+
   return (
-    <SmartVideo
+    <video
+      ref={videoRef}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata"
+      disablePictureInPicture
+      disableRemotePlayback
       src={src}
-      poster={src.replace(".mp4", ".jpg")}
     />
   );
 };
